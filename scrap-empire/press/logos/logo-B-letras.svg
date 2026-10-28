@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360"><g transform="translate(30 30) scale(0.586)"><defs><linearGradient id="gb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe58a"/><stop offset=".55" stop-color="#ffc642"/><stop offset="1" stop-color="#d98b1f"/></linearGradient>
+<linearGradient id="bgb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f8f84"/><stop offset="1" stop-color="#0f3b3a"/></linearGradient>
+<linearGradient id="skyb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb05a"/><stop offset="1" stop-color="#e2583c"/></linearGradient>
+<clipPath id="cb"><circle cx="256" cy="262" r="132"/></clipPath></defs>
+<rect width="512" height="512" rx="110" fill="url(#bgb)"/><clipPath id="kb"><rect width="512" height="512" rx="110"/></clipPath><path d="M256,262 L676,262 L669.6,334.9ZM256,262 L650.7,405.6 L619.7,472ZM256,262 L577.7,532 L526,583.7ZM256,262 L466,625.7 L399.6,656.7ZM256,262 L328.9,675.6 L256,682ZM256,262 L183.1,675.6 L112.4,656.7ZM256,262 L46,625.7 L-14,583.7ZM256,262 L-65.7,532 L-107.7,472ZM256,262 L-138.7,405.6 L-157.6,334.9ZM256,262 L-164,262 L-157.6,189.1ZM256,262 L-138.7,118.4 L-107.7,52ZM256,262 L-65.7,-8 L-14,-59.7ZM256,262 L46,-101.7 L112.4,-132.7ZM256,262 L183.1,-151.6 L256,-158ZM256,262 L328.9,-151.6 L399.6,-132.7ZM256,262 L466,-101.7 L526,-59.7ZM256,262 L577.7,-8 L619.7,52ZM256,262 L650.7,118.4 L669.6,189.1Z" fill="#ffffff" opacity="0.06" clip-path="url(#kb)"/>
+<path d="M424,262 L455.6,274.6 L451.2,305.6 L417.3,308.9 L401.5,346 L422.6,372.7 L403.2,397.4 L372.3,383.3 L340,407.5 L344.9,441.1 L315.8,452.8 L296.1,425.2 L256,430 L243.4,461.6 L212.4,457.2 L209.1,423.3 L172,407.5 L145.3,428.6 L120.6,409.2 L134.7,378.3 L110.5,346 L76.9,350.9 L65.2,321.8 L92.8,302.1 L88,262 L56.4,249.4 L60.8,218.4 L94.7,215.1 L110.5,178 L89.4,151.3 L108.8,126.6 L139.7,140.7 L172,116.5 L167.1,82.9 L196.2,71.2 L215.9,98.8 L256,94 L268.6,62.4 L299.6,66.8 L302.9,100.7 L340,116.5 L366.7,95.4 L391.4,114.8 L377.3,145.7 L401.5,178 L435.1,173.1 L446.8,202.2 L419.2,221.9 Z" fill="url(#gb)" stroke="#1b1712" stroke-width="12" stroke-linejoin="round"/>
+<circle cx="256" cy="262" r="140" fill="#1b1712"/>
+<g clip-path="url(#cb)"><rect x="100" y="100" width="320" height="320" fill="url(#skyb)"/>
+<circle cx="300" cy="230" r="34" fill="#ffe58a" opacity=".9"/>
+<path d="M150 214 q18 -26 40 -12 q16 -22 40 -6 q22 -4 26 14" fill="none" stroke="#f3ece0" stroke-width="20" stroke-linecap="round" opacity=".9"/>
+<rect x="164" y="226" width="44" height="120" fill="#6f6155" stroke="#1b1712" stroke-width="10"/>
+<rect x="164" y="244" width="44" height="14" fill="#e2483c"/>
+<path d="M120 400 V312 L188 282 V312 L256 282 V312 L324 282 V312 L392 282 V400Z" fill="#8f9aa3" stroke="#1b1712" stroke-width="10" stroke-linejoin="round"/>
+<path d="M188 282 V312 L256 282 V312 L324 282 V312 L392 282" fill="none" stroke="#c3ccd3" stroke-width="8"/>
+<rect x="146" y="330" width="40" height="30" fill="#ffd76a" stroke="#1b1712" stroke-width="7"/><rect x="214" y="330" width="40" height="30" fill="#ffd76a" stroke="#1b1712" stroke-width="7"/><rect x="282" y="330" width="40" height="30" fill="#ffd76a" stroke="#1b1712" stroke-width="7"/><rect x="340" y="330" width="34" height="30" fill="#ffd76a" stroke="#1b1712" stroke-width="7"/>
+</g>
+<circle cx="256" cy="262" r="136" fill="none" stroke="#1b1712" stroke-width="12"/>
+<path d="M410 104 l8 -23 l8 23 l23 8 l-23 8 l-8 23 l-8 -23 l-23 -8Z" fill="#fff3c4"/>
+</g>
+<text x="370" y="150" font-family="'Arial Black','Segoe UI Black','Roboto Black',Impact,Arial,sans-serif" font-weight="900" font-size="128" fill="#fff6e0" stroke="#1b1712" stroke-width="11.52" stroke-linejoin="round" paint-order="stroke" >SCRAP</text><text x="370" y="270" font-family="'Arial Black','Segoe UI Black','Roboto Black',Impact,Arial,sans-serif" font-weight="900" font-size="128" fill="#ffd76a" stroke="#1b1712" stroke-width="11.52" stroke-linejoin="round" paint-order="stroke" >EMPIRE</text>
+<text x="374" y="330" font-family="'Arial Black','Segoe UI Black','Roboto Black',Impact,Arial,sans-serif" font-weight="900" font-size="46" fill="#e6c98a" stroke="#1b1712" stroke-width="4.14" stroke-linejoin="round" paint-order="stroke" letter-spacing="10">IDLE FACTORY</text></svg>
