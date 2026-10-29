@@ -12,15 +12,47 @@
     <link rel="manifest" href="/zenit-dev/scrap-empire/manifest.webmanifest" />
     <title>Scrap Empire: Idle Factory — Zenit Studio</title>
     <style>
-      #boot { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; background: #1b1712; color: #ffd76a; font: 900 28px 'Trebuchet MS', system-ui, sans-serif; letter-spacing: .06em; z-index: 50; transition: opacity .4s; }
+      #boot { position: fixed; top: 0; right: 0; bottom: 0; left: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; background: #1b1712; color: #ffd76a; font: 900 28px 'Trebuchet MS', system-ui, sans-serif; letter-spacing: .06em; z-index: 50; transition: opacity .4s; }
       #boot img { width: 96px; height: 96px; }
+      #boot p { max-width: 320px; margin: 8px 16px 0; font: 600 14px/1.4 system-ui, sans-serif; letter-spacing: 0; color: #f2e6cf; text-align: center; }
+      #boot code { display: block; margin-top: 8px; font: 11px/1.3 monospace; color: #9a8e78; word-break: break-all; }
       #boot small { font-size: 11px; letter-spacing: .3em; color: #9a8e78; font-weight: 700; }
     </style>
-    <script type="module" crossorigin src="/zenit-dev/scrap-empire/assets/index-C6owCLYU.js"></script>
-    <link rel="stylesheet" crossorigin href="/zenit-dev/scrap-empire/assets/index-Byt99ztc.css">
+    <script type="module" crossorigin src="/zenit-dev/scrap-empire/assets/index-BBE-fkIa.js"></script>
+    <link rel="stylesheet" crossorigin href="/zenit-dev/scrap-empire/assets/index-C-q-KmFV.css">
   </head>
   <body>
     <div id="boot"><img src="/zenit-dev/scrap-empire/icon.svg" alt="" /><span>SCRAP EMPIRE</span><small>ZENIT STUDIO</small></div>
     <div id="app"></div>
+    <script>
+      // Si el juego no arranca (navegador demasiado antiguo o un error al cargar), lo dice en la pantalla de carga
+      // en vez de quedarse quieta. main.ts quita #boot al arrancar.
+      (function () {
+        var first = '';
+        function show() {
+          var boot = document.getElementById('boot');
+          if (!boot || boot.getAttribute('data-error')) return;
+          boot.setAttribute('data-error', '1');
+          var es = /^es\b/.test(navigator.language || '');
+          var p = document.createElement('p');
+          p.textContent = es
+            ? 'El juego no ha podido arrancar en este navegador. Prueba con Google Chrome actualizado Si nos lo envías a Zenit Studio, incluye este texto:'
+            : 'The game could not start in this browser. Try an up-to-date Google Chrome. If you report it, include this text:';
+          var c = document.createElement('code');
+          c.textContent = (first ? first + ' · ' : '') + navigator.userAgent;
+          p.appendChild(c);
+          boot.appendChild(p);
+        }
+        window.addEventListener('error', function (e) {
+          if (!first) first = String((e && e.message) || 'error');
+          setTimeout(show, 1500);
+        });
+        window.addEventListener('unhandledrejection', function (e) {
+          if (!first) first = String((e && e.reason && e.reason.message) || e.reason || 'promise');
+          setTimeout(show, 1500);
+        });
+        setTimeout(show, 12000);
+      })();
+    </script>
   </body>
 </html>
