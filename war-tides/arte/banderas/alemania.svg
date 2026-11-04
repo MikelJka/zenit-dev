@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 300" role="img" aria-label="Bandera de guerra alemana del juego">
+  <!-- Inspirada en la bandera de guerra de 1938-45, sin ningún símbolo nazi: el disco lleva un ancla. -->
+  <rect width="450" height="300" fill="#b3141c"/>
+  <g fill="#fff"><rect x="172" width="64" height="300"/><rect y="118" width="450" height="64"/></g>
+  <g fill="#000"><rect x="181" width="46" height="300"/><rect y="127" width="450" height="46"/></g>
+  <circle cx="204" cy="150" r="62" fill="#fff"/><circle cx="204" cy="150" r="56" fill="#000"/><circle cx="204" cy="150" r="50" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="9" stroke-linecap="round">
+    <circle cx="204" cy="112" r="8"/><path d="M204 120V186"/><path d="M186 132h36"/><path d="M168 158c4 22 20 30 36 30s32-8 36-30"/>
+  </g>
+  <path d="M162 165l6-13 7 12zM232 164l8-12 6 13z" fill="#000"/>
+  <g transform="translate(79 56)">
+    <path d="M-12-42h24l-3 30 30-3v24l-30-3 3 30h-24l3-30-30 3v-24l30 3z" fill="#000" stroke="#fff" stroke-width="3"/>
+  </g>
+</svg>
