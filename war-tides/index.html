@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-Bn9z_uWy.js"></script>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-exIFuzws.js"></script>
 </head>
 <body><title>War Tides Banco de Pruebas</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -32,7 +32,14 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
 /* Lluvia de la misión: trazos inclinados que caen; la intensidad va en --ll (0-1) */
 #lluvia{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:calc(.15 + var(--ll,.5) * .45);background-image:repeating-linear-gradient(105deg,rgba(190,210,220,.0) 0 7px,rgba(190,210,220,.22) 7px 8px,rgba(190,210,220,0) 8px 23px);background-size:260px 260px;animation:llueve .45s linear infinite}
 @keyframes llueve{to{background-position:-70px 260px}}
-@media (prefers-reduced-motion:reduce){#lluvia{animation:none}}
+/* Nieve: copos que caen despacio y de lado; intensidad en --nv (0-1) */
+#nieve{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:calc(.25 + var(--nv,.5) * .6);background-image:radial-gradient(circle,rgba(235,242,245,.9) 1px,transparent 1.6px),radial-gradient(circle,rgba(235,242,245,.7) 1.4px,transparent 2px);background-size:90px 90px,150px 150px;background-position:0 0,40px 60px;animation:nieva 6s linear infinite}
+@keyframes nieva{to{background-position:-90px 270px,-110px 510px}}
+@media (prefers-reduced-motion:reduce){#lluvia,#nieve{animation:none}}
+/* Avisos de oficial: arriba en el centro; al tocarlos la cámara va al barco */
+#avisos{position:fixed;z-index:6;left:50%;transform:translateX(-50%);top:calc(34px + env(safe-area-inset-top,0px));display:flex;flex-direction:column;gap:4px;align-items:center;max-width:min(560px,70vw)}
+#avisos button{font:600 11.5px var(--mono);padding:5px 10px;background:rgba(9,19,24,.86);border:1px solid var(--linea);color:inherit;text-align:left}
+#avisos button.p3,#avisos button.p4{border-color:var(--ambar);color:var(--ambar)}
 #bajo-p{position:absolute;left:50%;top:calc(10px + env(safe-area-inset-top,0px));transform:translateX(-50%);font:600 13px var(--mono);color:#9fd6d0;letter-spacing:.08em}
 #plano{left:max(8px,env(safe-area-inset-left,0px));right:calc(max(8px,env(safe-area-inset-right,0px)) + 52px);top:calc(40px + env(safe-area-inset-top,0px));padding:6px 8px}
 #casco{display:flex;height:58px;gap:1px;background:#000;border:1px solid var(--linea);border-radius:18px 54px 54px 18px;overflow:hidden}
@@ -94,6 +101,8 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
 <div id="recuadro" hidden></div>
 <div id="bajo" hidden><span id="bajo-p"></span></div>
 <div id="lluvia" hidden></div>
+<div id="nieve" hidden></div>
+<div id="avisos" aria-live="polite"></div>
 <div class="hud" id="pa" hidden style="right:calc(max(8px,env(safe-area-inset-right,0px)) + 52px);top:calc(6px + env(safe-area-inset-top,0px));max-width:50vw;font-size:10.5px;padding:4px 6px;background:rgba(9,19,24,.68)"><div id="pa-t"></div><div id="pa-v" class="et"></div><div class="acc" style="display:flex;gap:3px;margin-top:4px;flex-wrap:wrap"><button id="a-prep">Preparar ataque</button><button id="a-lanz" aria-pressed="false">Lanzar a...</button><button id="a-cap">Patrulla</button><button id="a-exp">Explorar</button></div></div>
 <div class="hud" id="plano" hidden>
  <div id="casco"></div>
