@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-Bu1pLjES.js"></script>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-Bn9z_uWy.js"></script>
 </head>
 <body><title>War Tides Banco de Pruebas</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -27,6 +27,13 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
 #ficha .acc button{min-width:50px;padding-inline:6px}
 /* Selección múltiple: mantener pulsado y arrastrar */
 #recuadro{position:fixed;z-index:4;pointer-events:none;border:1px dashed var(--ambar);background:rgba(232,176,74,.08)}
+/* Bajo el agua: velo verde azulado que se oscurece con la cota, y la profundidad */
+#bajo{position:fixed;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse at center,rgba(8,52,58,.18) 35%,rgba(2,18,22,.82) 100%);transition:opacity .6s}
+/* Lluvia de la misión: trazos inclinados que caen; la intensidad va en --ll (0-1) */
+#lluvia{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:calc(.15 + var(--ll,.5) * .45);background-image:repeating-linear-gradient(105deg,rgba(190,210,220,.0) 0 7px,rgba(190,210,220,.22) 7px 8px,rgba(190,210,220,0) 8px 23px);background-size:260px 260px;animation:llueve .45s linear infinite}
+@keyframes llueve{to{background-position:-70px 260px}}
+@media (prefers-reduced-motion:reduce){#lluvia{animation:none}}
+#bajo-p{position:absolute;left:50%;top:calc(10px + env(safe-area-inset-top,0px));transform:translateX(-50%);font:600 13px var(--mono);color:#9fd6d0;letter-spacing:.08em}
 #plano{left:max(8px,env(safe-area-inset-left,0px));right:calc(max(8px,env(safe-area-inset-right,0px)) + 52px);top:calc(40px + env(safe-area-inset-top,0px));padding:6px 8px}
 #casco{display:flex;height:58px;gap:1px;background:#000;border:1px solid var(--linea);border-radius:18px 54px 54px 18px;overflow:hidden}
 #casco div{position:relative;min-width:0;cursor:pointer;background:#2c4a3c;font-size:9px;line-height:1.1;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;color:#eef2f2}
@@ -57,7 +64,9 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
 #etq{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden}
 .etq{position:absolute;left:0;top:0;font:600 10px var(--mono);color:#cfe6f2;text-shadow:0 0 3px #000,0 0 3px #000;white-space:nowrap}
 .etq.ene{color:#ffb3a1}.etq.sel{color:var(--ambar)}
-#gd{display:flex;gap:4px;margin-top:8px;align-items:center;flex-wrap:wrap}#gd button{padding-inline:10px;min-height:32px}
+#gd,#gfi,#gbq{display:flex;gap:4px;margin-top:8px;align-items:center;flex-wrap:wrap}#gd button,#gfi button{padding-inline:10px;min-height:32px}
+#hs{margin-top:8px;font-size:11px}#hs summary{cursor:pointer}#hs-l div{margin-top:3px}#hs-l .perdido{opacity:.6;text-decoration:line-through}
+#gbq button{padding-inline:7px;min-height:28px;font-size:11px}#gbq button[aria-pressed="false"]{opacity:.45;text-decoration:line-through}
 #hora{font-weight:700;color:var(--ambar);margin-right:4px}
 #of{background:#6a1f14;border-color:var(--mal)}
 /* Solo se juega en horizontal (DISENO §9). El modo cine sí se ve en vertical (§13), así que ahí no sale. */
@@ -83,6 +92,8 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
  <div class="acc" id="gm"><button data-e="0">Paro</button><button data-e=".33">⅓</button><button data-e=".66">⅔</button><button data-e="1">Toda</button><button id="pj">Proyectil: auto</button><button id="bt">Torpedos</button><button id="bs" hidden>Inmersión</button><button id="tdc" hidden>Tirar con solución</button><button id="bd" aria-pressed="false">Daños</button><button id="co" aria-expanded="false">Formación</button><button id="of" hidden>Abrir fuego</button><button id="rt">Retirarse</button></div>
  <div class="acc" id="gf" hidden><button data-f="columna">Columna</button><button data-f="linea">Línea</button><button data-f="pantalla">Pantalla</button><button data-f="circulo">Círculo</button><button data-f="suelto">Suelto</button><button id="gg">Todo el grupo</button></div></div>
 <div id="recuadro" hidden></div>
+<div id="bajo" hidden><span id="bajo-p"></span></div>
+<div id="lluvia" hidden></div>
 <div class="hud" id="pa" hidden style="right:calc(max(8px,env(safe-area-inset-right,0px)) + 52px);top:calc(6px + env(safe-area-inset-top,0px));max-width:50vw;font-size:10.5px;padding:4px 6px;background:rgba(9,19,24,.68)"><div id="pa-t"></div><div id="pa-v" class="et"></div><div class="acc" style="display:flex;gap:3px;margin-top:4px;flex-wrap:wrap"><button id="a-prep">Preparar ataque</button><button id="a-lanz" aria-pressed="false">Lanzar a...</button><button id="a-cap">Patrulla</button><button id="a-exp">Explorar</button></div></div>
 <div class="hud" id="plano" hidden>
  <div id="casco"></div>
@@ -90,7 +101,7 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
  <div id="ordenes"><button id="o-brig">Enviar brigada</button><button id="o-cierra">Cerrar compartimento</button><button id="o-inunda">Inundar</button><button id="o-contra">Contrainundar</button><button id="o-aban" class="peligro">Abandonar el barco</button></div>
 </div>
 <div class="hud" id="fin" hidden><strong id="fin-t"></strong><div id="fin-d"></div><div style="display:flex;gap:5px;margin-top:9px"><button id="fin-b" style="padding-inline:14px">Repetir</button><button id="fin-m" style="padding-inline:14px">Menú</button><button id="fin-s" style="padding-inline:14px" hidden>Siguiente misión</button></div></div>
-<div class="hud" id="menu"><div><h1>War Tides</h1><img id="m-b" width="42" height="28" style="float:right;margin:6px 0 4px 8px;border:1px solid var(--linea)"><h2 id="m-t"></h2><p class="f2" id="m-f"></p><p id="m-c"></p><p><b id="m-o"></b></p><div id="gmi"></div><div id="m-l" class="et" style="min-height:1em;margin-top:5px"></div><div id="gd"><span class="et">Dificultad</span><button data-d="facil">Fácil</button><button data-d="normal">Normal</button><button data-d="dificil">Difícil</button><span id="gid" style="display:flex;gap:4px;margin-left:12px"><button data-id="es">ES</button><button data-id="en">EN</button></span></div><div class="acc"><button id="m-savo">Empezar la misión</button><button id="m-prueba">Batalla de prueba</button><button id="m-cine">Modo cine</button></div></div></div>
+<div class="hud" id="menu"><div><h1>War Tides</h1><img id="m-b" width="42" height="28" style="float:right;margin:6px 0 4px 8px;border:1px solid var(--linea)"><h2 id="m-t"></h2><p class="f2" id="m-f"></p><p id="m-c"></p><p><b id="m-o"></b></p><div id="gmi"></div><div id="m-l" class="et" style="min-height:1em;margin-top:5px"></div><div id="gd"><span class="et">Dificultad</span><button data-d="facil">Fácil</button><button data-d="normal">Normal</button><button data-d="dificil">Difícil</button><span id="gid" style="display:flex;gap:4px;margin-left:12px"><button data-id="es">ES</button><button data-id="en">EN</button></span></div><div id="gfi"><span class="et">Formación</span><button data-fi="">Histórica</button><button data-fi="columna">Columna</button><button data-fi="linea">Línea</button><button data-fi="pantalla">Pantalla</button><button data-fi="circulo">Círculo</button></div><div id="gbq"><span class="et">Salen</span></div><details id="hs" hidden><summary class="et">Hoja de servicios</summary><div id="hs-l"></div></details><div class="acc"><button id="m-savo">Empezar la misión</button><button id="m-prueba">Batalla de prueba</button><button id="m-cine">Modo cine</button></div></div></div>
 <div class="hud" id="aviso">Cargando…</div>
 <div id="gira" role="alert"><b aria-hidden="true">⟳</b><span data-t>Gira el móvil: se juega en horizontal.</span></div>
 </body></html>
