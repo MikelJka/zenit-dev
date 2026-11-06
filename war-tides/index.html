@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-C7KFQ44d.js"></script>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-C0wCCvv7.js"></script>
 </head>
 <body><title>War Tides Banco de Pruebas</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -59,7 +59,8 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
 #resu{display:flex;gap:14px;flex-wrap:wrap;margin:6px 0;font-variant-numeric:tabular-nums}
 #ordenes{display:flex;gap:3px;flex-wrap:wrap}
 #ordenes button{padding-inline:8px}
-#ordenes .peligro{border-color:var(--mal);background:#3b1e17}
+#ordenes .peligro,#sal,#salir .peligro{border-color:var(--mal);background:#3b1e17}
+#salir{left:50%;top:50%;transform:translate(-50%,-50%);padding:12px 18px;max-width:min(92vw,420px);z-index:6}
 #fin{left:50%;top:50%;transform:translate(-50%,-50%);padding:12px 18px;font-size:12px;max-width:min(92vw,620px);max-height:92vh;overflow:auto;z-index:4;touch-action:pan-y}
 #fin strong{display:block;font-size:18px;margin-bottom:6px}
 #fin p{color:var(--suave);margin-top:7px}
@@ -101,6 +102,7 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
  <div class="et">Barcos</div><div class="g" id="gn"><button data-n="10">10</button><button data-n="20">20</button><button data-n="40">40</button></div>
  <button id="rs">Medir desde cero</button>
  <button id="cp">Copiar resultado</button>
+ <button id="sal" class="peligro" hidden>Volver al menú principal</button>
 </div>
 <div class="hud" id="ficha"><strong><span id="hora" hidden></span><span id="fn">–</span></strong><span id="fc"></span> · <span id="fo"></span><br><span id="fa"></span>
  <div class="acc" id="gm"><button data-e="0">Paro</button><button data-e=".33">⅓</button><button data-e=".66">⅔</button><button data-e="1">Toda</button><button id="pj">Proyectil: auto</button><button id="bt">Torpedos</button><button id="bs" hidden>Inmersión</button><button id="tdc" hidden>Tirar con solución</button><button id="hm" aria-pressed="false">Humo</button><button id="bd" aria-pressed="false">Daños</button><button id="co" aria-expanded="false">Formación</button><button id="of" hidden>Abrir fuego</button><button id="rt">Retirarse</button></div>
@@ -118,6 +120,7 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
  <div id="resu"></div>
  <div id="ordenes"><button id="o-brig">Enviar brigada</button><button id="o-cierra">Cerrar compartimento</button><button id="o-inunda">Inundar</button><button id="o-contra">Contrainundar</button><button id="o-aban" class="peligro">Abandonar el barco</button></div>
 </div>
+<div class="hud" id="salir" hidden><strong>¿Volver al menú principal?</strong><div style="margin-top:6px">Se abandona la misión y se pierde el progreso de esta batalla. Las misiones ya terminadas no se tocan.</div><div style="display:flex;gap:5px;margin-top:9px"><button id="sal-n" style="padding-inline:14px">Seguir jugando</button><button id="sal-s" class="peligro" style="padding-inline:14px">Salir al menú</button></div></div>
 <div class="hud" id="fin" hidden><strong id="fin-t"></strong><div id="fin-d"></div><div style="display:flex;gap:5px;margin-top:9px"><button id="fin-b" style="padding-inline:14px">Repetir</button><button id="fin-m" style="padding-inline:14px">Menú</button><button id="fin-s" style="padding-inline:14px" hidden>Siguiente misión</button></div></div>
 <div class="hud" id="menu"><div><h1>War Tides</h1><img id="m-b" width="42" height="28" style="float:right;margin:6px 0 4px 8px;border:1px solid var(--linea)"><h2 id="m-t"></h2><p class="f2" id="m-f"></p><p id="m-c"></p><p><b id="m-o"></b></p><div id="gmi"></div><div id="m-l" class="et" style="min-height:1em;margin-top:5px"></div><div id="gd"><span class="et">Dificultad</span><button data-d="facil">Fácil</button><button data-d="normal">Normal</button><button data-d="dificil">Difícil</button><span id="gid" style="display:flex;gap:4px;margin-left:12px"><button data-id="es">ES</button><button data-id="en">EN</button></span></div><div id="gfi"><span class="et">Formación</span><button data-fi="">Histórica</button><button data-fi="columna">Columna</button><button data-fi="linea">Línea</button><button data-fi="pantalla">Pantalla</button><button data-fi="circulo">Círculo</button></div><div id="gbq"><span class="et">Salen</span></div><details id="hs" hidden><summary class="et">Hoja de servicios</summary><div id="hs-l"></div></details><details id="ast" hidden><summary class="et">Astillero</summary><div id="ast-l"></div></details><div id="tienda" hidden><span id="t-m" class="resto"></span> <button id="t-c">Desbloquear la campaña</button> <button id="t-r">Restaurar compra</button></div><div class="acc"><button id="m-savo">Empezar la misión</button><button id="m-prueba">Batalla de prueba</button><button id="m-cine">Modo cine</button></div></div></div>
 <div class="hud" id="aviso">Cargando…</div>
