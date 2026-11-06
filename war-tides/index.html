@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-rOlpFXBq.js"></script>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-C7KFQ44d.js"></script>
 </head>
 <body><title>War Tides Banco de Pruebas</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -38,6 +38,8 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
 @keyframes nieva{to{background-position:-90px 270px,-110px 510px}}
 @media (prefers-reduced-motion:reduce){#lluvia,#nieve{animation:none}}
 /* Avisos de oficial: arriba en el centro; al tocarlos la cámara va al barco */
+#obj{left:50%;transform:translateX(-50%);top:calc(4px + env(safe-area-inset-top,0px));max-width:min(560px,70vw);background:rgba(9,19,24,.78);padding:4px 9px;font-size:11.5px;cursor:pointer;text-align:center}
+#obj-b{color:var(--ambar);font-weight:700;margin-bottom:2px}#obj.c #obj-o,#obj.c #obj-b{display:none}#obj.c::before{content:"🎯"}#obj.g{box-shadow:0 0 0 1px var(--ambar)}
 #avisos{position:fixed;z-index:6;left:50%;transform:translateX(-50%);top:calc(34px + env(safe-area-inset-top,0px));display:flex;flex-direction:column;gap:4px;align-items:center;max-width:min(560px,70vw)}
 #avisos button{font:600 11.5px var(--mono);padding:5px 10px;background:rgba(9,19,24,.86);border:1px solid var(--linea);color:inherit;text-align:left}
 #avisos button.p3,#avisos button.p4{border-color:var(--ambar);color:var(--ambar)}
@@ -107,6 +109,7 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
 <div id="bajo" hidden><span id="bajo-p"></span></div>
 <div id="lluvia" hidden></div>
 <div id="nieve" hidden></div>
+<div id="obj" class="hud" hidden><div id="obj-b"></div><div id="obj-o"></div></div>
 <div id="avisos" aria-live="polite"></div>
 <div id="mando" hidden><canvas id="mando-c" width="24" height="24"></canvas><div><b id="mando-n"></b><span id="mando-t"></span></div></div>
 <div class="hud" id="des" hidden style="left:calc(max(8px,env(safe-area-inset-left,0px)));top:calc(52px + env(safe-area-inset-top,0px));max-width:min(470px,62vw);font-size:10.5px;padding:4px 6px;background:rgba(9,19,24,.72)"></div><div class="hud" id="pa" hidden style="right:calc(max(8px,env(safe-area-inset-right,0px)) + 52px);top:calc(6px + env(safe-area-inset-top,0px));max-width:50vw;font-size:10.5px;padding:4px 6px;background:rgba(9,19,24,.68)"><div id="pa-t"></div><div id="pa-v" class="et"></div><div class="acc" style="display:flex;gap:3px;margin-top:4px;flex-wrap:wrap"><button id="a-prep">Preparar ataque</button><button id="a-lanz" aria-pressed="false">Lanzar a...</button><button id="a-cap">Patrulla</button><button id="a-exp">Explorar</button></div></div>
