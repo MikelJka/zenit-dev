@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-B2muF7mI.js"></script>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-DMZIXWmb.js"></script>
 </head>
 <body><title>War Tides Banco de Pruebas</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -42,6 +42,7 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
 #obj-b{color:var(--ambar);font-weight:700;margin-bottom:2px}#obj.c #obj-o,#obj.c #obj-b{display:none}#obj.c::before{content:"🎯"}#obj.g{box-shadow:0 0 0 1px var(--ambar)}
 #avisos{position:fixed;z-index:6;left:50%;transform:translateX(-50%);top:calc(34px + env(safe-area-inset-top,0px));display:flex;flex-direction:column;gap:4px;align-items:center;max-width:min(560px,70vw)}
 #avisos button{font:600 11.5px var(--mono);padding:5px 10px;background:rgba(9,19,24,.86);border:1px solid var(--linea);color:inherit;text-align:left}
+#alerta-t{position:fixed;z-index:7;left:50%;transform:translateX(-50%);top:calc(150px + env(safe-area-inset-top,0px));font:700 13px var(--mono);padding:7px 14px;background:rgba(60,8,8,.92);border:2px solid #ff4a3a;color:#ffd9d3;animation:alt-t 1s steps(2) infinite;cursor:pointer;max-width:min(560px,80vw)}@keyframes alt-t{50%{background:rgba(120,14,14,.95)}}
 #avisos button.p3,#avisos button.p4{border-color:var(--ambar);color:var(--ambar)}
 /* Mando caricaturizado en píxeles cuando se da una orden */
 #mando{position:fixed;z-index:6;right:calc(12px + env(safe-area-inset-right,0px));top:calc(56px + env(safe-area-inset-top,0px));display:flex;gap:8px;align-items:center;background:rgba(9,19,24,.88);border:1px solid var(--linea);padding:6px 10px 6px 6px;max-width:min(320px,46vw)}
@@ -113,6 +114,7 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
 <div id="nieve" hidden></div>
 <div id="obj" class="hud" hidden><div id="obj-b"></div><div id="obj-o"></div></div>
 <div id="avisos" aria-live="polite"></div>
+<button id="alerta-t" hidden aria-live="assertive"></button>
 <div id="mando" hidden><canvas id="mando-c" width="24" height="24"></canvas><div><b id="mando-n"></b><span id="mando-t"></span></div></div>
 <div class="hud" id="des" hidden style="left:calc(max(8px,env(safe-area-inset-left,0px)));top:calc(52px + env(safe-area-inset-top,0px));max-width:min(470px,62vw);font-size:10.5px;padding:4px 6px;background:rgba(9,19,24,.72)"></div><div class="hud" id="pa" hidden style="right:calc(max(8px,env(safe-area-inset-right,0px)) + 52px);top:calc(6px + env(safe-area-inset-top,0px));max-width:50vw;font-size:10.5px;padding:4px 6px;background:rgba(9,19,24,.68)"><div id="pa-t"></div><div id="pa-v" class="et"></div><div class="acc" style="display:flex;gap:3px;margin-top:4px;flex-wrap:wrap"><button id="a-prep">Preparar ataque</button><button id="a-lanz" aria-pressed="false">Lanzar a...</button><button id="a-cap">Patrulla</button><button id="a-exp">Explorar</button></div></div>
 <div class="hud" id="plano" hidden>
