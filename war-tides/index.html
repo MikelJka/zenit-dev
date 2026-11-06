@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-DvwJ67mk.js"></script>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-D089IGXv.js"></script>
 </head>
 <body><title>War Tides Banco de Pruebas</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -26,6 +26,9 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
 #ficha strong{font-size:15px;font-weight:700;display:block}
 #ficha .acc{display:flex;gap:3px;margin-top:5px;flex-wrap:wrap}
 #ficha .acc button{min-width:50px;padding-inline:6px}
+#ficha .gr{display:flex;gap:3px;align-items:center;flex-wrap:wrap;width:100%}#ficha .gr .et{width:68px;flex:none}
+#ficha .acc.plegado .gr{display:none}#b-plega{min-width:32px!important;margin-left:auto;order:-1}
+#ficha .gr button#rt,#ficha .gr button#of{border-color:var(--mal)}
 /* Selección múltiple: mantener pulsado y arrastrar */
 #recuadro{position:fixed;z-index:4;pointer-events:none;border:1px dashed var(--ambar);background:rgba(232,176,74,.08)}
 /* Bajo el agua: velo verde azulado que se oscurece con la cota, y la profundidad */
@@ -106,7 +109,11 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
  <button id="sal" class="peligro" hidden>Volver al menú principal</button>
 </div>
 <div class="hud" id="ficha"><strong><span id="hora" hidden></span><span id="fn">–</span></strong><span id="fc"></span> · <span id="fo"></span><br><span id="fa"></span>
- <div class="acc" id="gm"><button id="b-todos">Todos</button><button id="b-varios" aria-pressed="false">➕ Varios</button><button data-e="0">Paro</button><button data-e=".33">⅓</button><button data-e=".66">⅔</button><button data-e="1">Toda</button><button id="pj">Proyectil: auto</button><button id="bt">Torpedos</button><button id="bs" hidden>Inmersión</button><button id="tdc" hidden>Tirar con solución</button><button id="hm" aria-pressed="false">Humo</button><button id="bd" aria-pressed="false">Daños</button><button id="co" aria-expanded="false">Formación</button><button id="of" hidden>Abrir fuego</button><button id="rt">Retirarse</button></div>
+ <div class="acc" id="gm"><button id="b-plega" aria-expanded="true" aria-label="Plegar órdenes">▾</button>
+  <div class="gr" id="gr-sel"><span class="et">Selección</span><button id="b-todos">Todos</button><button id="b-varios" aria-pressed="false">➕ Varios</button></div>
+  <div class="gr" id="gr-maq"><span class="et">Máquinas</span><button data-e="0">Paro</button><button data-e=".33">⅓</button><button data-e=".66">⅔</button><button data-e="1">Toda</button></div>
+  <div class="gr" id="gr-arm"><span class="et">Armas</span><button id="pj">Proyectil: auto</button><button id="bt">Torpedos</button><button id="bs" hidden>Inmersión</button><button id="tdc" hidden>Tirar con solución</button><button id="of" hidden>Abrir fuego</button></div>
+  <div class="gr" id="gr-bar"><span class="et">Barco</span><button id="hm" aria-pressed="false">Humo</button><button id="bd" aria-pressed="false">Daños</button><button id="co" aria-expanded="false">Formación</button><button id="rt">Retirarse</button></div></div>
  <div class="acc" id="gf" hidden><button data-f="columna">Columna</button><button data-f="linea">Línea</button><button data-f="pantalla">Pantalla</button><button data-f="circulo">Círculo</button><button data-f="suelto">Suelto</button><button id="gg">Todo el grupo</button></div></div>
 <div id="recuadro" hidden></div>
 <div id="bajo" hidden><span id="bajo-p"></span></div>
