@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-ByJI_lNK.js"></script>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-BL_bGK_q.js"></script>
 </head>
 <body><title>War Tides Banco de Pruebas</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -14,6 +14,7 @@ body.cine .hud,body.cine .etq{display:none!important}
 #med{display:none;left:max(8px,env(safe-area-inset-left,0px));top:calc(6px + env(safe-area-inset-top,0px));font-size:11px;padding:3px 7px;background:rgba(9,19,24,.55)}
 #med b{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;margin-right:3px}
 body.medir #med{display:block}
+#b-centra{right:max(8px,env(safe-area-inset-right,0px));top:calc(52px + env(safe-area-inset-top,0px));width:44px;height:40px;padding:0;font-size:18px;z-index:3}#b-nada{border-color:var(--ambar)}
 #mn{right:max(8px,env(safe-area-inset-right,0px));top:calc(6px + env(safe-area-inset-top,0px));width:44px;height:40px;padding:0;font-size:18px;z-index:3}
 .et{color:var(--suave);font-size:10px;letter-spacing:.08em;text-transform:uppercase}
 .f{display:flex;justify-content:space-between;gap:10px;font-variant-numeric:tabular-nums}
@@ -72,7 +73,7 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
 #portada h1{font:700 34px/1.1 var(--mono);letter-spacing:.04em;text-shadow:0 2px 8px #000}
 #portada p{text-shadow:0 1px 4px #000}
 #portada .acc button{min-height:46px;padding-inline:18px;font-size:14px}
-body.en-portada .hud:not(#portada):not(#aviso),body.en-portada #mn{visibility:hidden}
+body.en-portada .hud:not(#portada):not(#aviso),body.en-portada #mn,body.en-portada #b-centra{visibility:hidden}
 #menu{inset:0;z-index:5;background:rgba(5,14,19,.96);display:flex;align-items:flex-start;justify-content:center;padding-inline:max(16px,env(safe-area-inset-left,0px));overflow:auto;border:0;touch-action:pan-y}
 #menu>div{max-width:680px;padding-block:12px}
 #menu h1{font:700 26px/1.1 var(--mono);letter-spacing:.02em;margin-bottom:2px}
@@ -98,9 +99,41 @@ body.en-portada .hud:not(#portada):not(#aviso),body.en-portada #mn{visibility:hi
 #gira b{font-size:44px;color:var(--ambar);font-weight:400}
 @media (orientation:portrait){body:not(.cine) #gira{display:flex}}
 #aviso{inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding-inline:max(16px,env(safe-area-inset-left,0px));border:0;background:var(--fondo);font-size:15px}
+
+/* Portada y menú de misiones: diseño adaptable (móvil vertical, horizontal, tableta y PC). */
+#portada{align-items:center;justify-content:flex-start;background:linear-gradient(90deg,rgba(5,14,19,.88) 0%,rgba(5,14,19,.55) 45%,rgba(5,14,19,.05) 100%);padding:max(20px,env(safe-area-inset-top,0px)) max(28px,env(safe-area-inset-right,0px)) max(20px,env(safe-area-inset-bottom,0px)) max(28px,env(safe-area-inset-left,0px))}
+#portada .pt-w{width:min(420px,100%)}#portada .pt-k{font:600 11px var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--ambar);margin-bottom:6px}
+#portada h1{font:800 clamp(34px,8vw,58px)/1 var(--mono);letter-spacing:.03em}#portada .f2{margin:6px 0 22px;letter-spacing:.18em;text-transform:uppercase;font-size:12px}
+#portada .acc{display:flex;flex-direction:column;gap:8px}#portada .acc button{width:100%;text-align:left;min-height:50px;font-size:15px;border-radius:6px;padding-inline:18px;background:rgba(9,19,24,.7);backdrop-filter:blur(3px)}
+#portada .acc button#p-jugar{background:var(--ambar);color:#14110a;border-color:var(--ambar);font-weight:700}
+@media (max-width:640px) and (orientation:portrait){#portada{background:linear-gradient(180deg,rgba(5,14,19,.3),rgba(5,14,19,.85) 70%);align-items:flex-end}}
+#menu{display:block;padding:0;overflow:hidden}
+#menu .mn-w{max-width:1180px;margin:0 auto;height:100%;display:flex;flex-direction:column;padding:max(10px,env(safe-area-inset-top,0px)) max(14px,env(safe-area-inset-right,0px)) 0 max(14px,env(safe-area-inset-left,0px))}
+#menu>div{max-width:none;padding-block:0}
+.mn-cab{display:flex;gap:12px;align-items:center;padding-bottom:8px;border-bottom:1px solid var(--linea)}.mn-cab h1{font-size:22px}.mn-cab button{min-height:38px;padding-inline:12px}
+.mn-cols{flex:1;min-height:0;display:grid;grid-template-columns:minmax(260px,.9fr) 1.4fr;gap:18px;overflow:hidden}
+.mn-izq,.mn-der{overflow:auto;padding:10px 4px 16px;touch-action:pan-y;-webkit-overflow-scrolling:touch}
+.mn-tit{display:flex;gap:10px;align-items:flex-start}.mn-tit img{border:1px solid var(--linea);flex:none;margin-top:4px}.mn-tit h2{margin-top:0}
+#m-mapa{width:100%;max-width:460px;background:#0b1d2c;border:1px solid var(--linea);display:block;margin:10px 0 2px;border-radius:4px}#m-mapa-e{margin:0 0 6px}
+.mn-obj{border-left:3px solid var(--ambar);padding-left:9px;margin-top:8px}
+.mn-opc{display:flex;flex-direction:column;gap:2px;margin-top:6px}#gid{display:flex;gap:4px;margin-left:auto}
+#gmi{gap:12px;margin-top:8px}.camp{flex-direction:column;align-items:stretch;gap:4px;padding:8px;border:1px solid var(--linea);border-radius:6px;background:rgba(255,255,255,.025)}
+.camp .et{width:auto;color:var(--ambar);letter-spacing:.08em;margin-bottom:2px}.camp button{width:100%;text-align:left;min-height:38px;padding-inline:12px;border-radius:5px}
+.camp button[aria-pressed="true"]{border-color:var(--ambar);background:rgba(224,179,91,.2);color:var(--texto)}
+.mn-pie{display:flex;gap:8px;padding:10px 0 max(10px,env(safe-area-inset-bottom,0px));border-top:1px solid var(--linea);background:rgba(5,14,19,.98)}
+.mn-pie button{min-height:46px;padding-inline:16px;font-size:13px;border-radius:6px}.mn-pie #m-savo{flex:2;font-weight:700;font-size:15px}.mn-pie #m-prueba,.mn-pie #m-cine{flex:1}
+@media (max-width:760px){.mn-cols{grid-template-columns:1fr;grid-template-rows:minmax(0,.9fr) minmax(0,1.3fr);gap:6px}.mn-pie #m-prueba,.mn-pie #m-cine{display:none}.mn-cab h1{font-size:19px}}
+@media (max-height:520px) and (min-width:761px){.mn-cols{gap:12px}#m-mapa{max-width:320px}}
+@media (max-height:480px){#portada .pt-w{width:min(640px,100%)}#portada h1{font-size:40px}#portada .f2{margin:4px 0 12px}#portada .acc{flex-direction:row;flex-wrap:wrap}#portada .acc button{width:auto;flex:1 1 150px;min-height:44px}
+.mn-cab{padding-bottom:4px}.mn-cab .f2{display:none}.mn-cab h1{font-size:17px}.mn-cab button{min-height:32px}.mn-pie{padding-top:6px}.mn-pie button{min-height:40px}}
+#flota{left:max(8px,env(safe-area-inset-left,0px));top:calc(6px + env(safe-area-inset-top,0px));right:calc(max(8px,env(safe-area-inset-right,0px)) + 104px);display:flex;gap:4px;overflow-x:auto;padding:4px;background:rgba(9,19,24,.55);z-index:2;touch-action:pan-x;scrollbar-width:none}
+#flota::-webkit-scrollbar{display:none}#flota button{flex:none;min-width:58px;min-height:34px;padding:2px 8px;font-size:11px;line-height:1.15;text-align:left;border-radius:5px;position:relative}
+#flota button small{display:block;color:var(--suave);font-size:9px}#flota button[aria-pressed="true"]{border-color:var(--ambar);background:rgba(224,179,91,.28);color:var(--texto)}#flota button.mal{border-color:var(--mal)}#flota button.med{border-color:var(--ambar)}
+body.en-portada #flota{visibility:hidden}
 </style>
 <canvas id="mapa"></canvas><canvas id="sonar" hidden></canvas><div id="etq"></div>
 <div class="hud" id="med"><b id="fps">–</b><span class="et">fps</span> <span id="p1">–</span> · <span id="tm">0:00</span> · <span id="nb">–</span> barcos · <span id="es">–</span><br><span class="et">Por minuto</span> <span id="cm">–</span></div>
+<button class="hud" id="b-centra" aria-label="Centrar la vista en tu flota" title="Centrar en la flota">◎</button>
 <button class="hud" id="mn" aria-pressed="false" aria-label="Abrir ajustes">☰</button>
 <div class="hud" id="ctl" hidden>
  <div class="et">Velocidad</div><div class="g" id="gv"><button data-v="1">Real</button><button data-v="4">x1</button><button data-v="8">x2</button><button data-v="16">x3</button><button data-v="48">x4</button></div>
@@ -115,11 +148,12 @@ body.en-portada .hud:not(#portada):not(#aviso),body.en-portada #mn{visibility:hi
 </div>
 <div class="hud" id="ficha"><strong><span id="hora" hidden></span><span id="fn">–</span></strong><span id="fc"></span> · <span id="fo"></span><br><span id="fa"></span>
  <div class="acc" id="gm"><button id="b-plega" aria-expanded="true" aria-label="Plegar órdenes">▾</button>
-  <div class="gr" id="gr-sel"><span class="et">Selección</span><button id="b-todos">Todos</button><button id="b-varios" aria-pressed="false">➕ Varios</button></div>
+  <div class="gr" id="gr-sel"><span class="et">Selección</span><button id="b-todos">Todos</button><button id="b-varios" aria-pressed="false">➕ Varios</button><button id="b-nada">✕ Ninguno</button></div>
   <div class="gr" id="gr-maq"><span class="et">Máquinas</span><button data-e="0">Paro</button><button data-e=".33">⅓</button><button data-e=".66">⅔</button><button data-e="1">Toda</button></div>
   <div class="gr" id="gr-arm"><span class="et">Armas</span><button id="pj">Proyectil: auto</button><button id="bt">Torpedos</button><button id="bs" hidden>Inmersión</button><button id="tdc" hidden>Tirar con solución</button><button id="of" hidden>Abrir fuego</button></div>
   <div class="gr" id="gr-bar"><span class="et">Barco</span><button id="hm" aria-pressed="false">Humo</button><button id="bd" aria-pressed="false">Daños</button><button id="co" aria-expanded="false">Formación</button><button id="rt">Retirarse</button></div></div>
  <div class="acc" id="gf" hidden><button data-f="columna">Columna</button><button data-f="linea">Línea</button><button data-f="pantalla">Pantalla</button><button data-f="circulo">Círculo</button><button data-f="suelto">Suelto</button><button id="gg">Todo el grupo</button></div></div>
+<div class="hud" id="flota" hidden aria-label="Tu flota"></div>
 <div id="recuadro" hidden></div>
 <div id="bajo" hidden><span id="bajo-p"></span></div>
 <div id="lluvia" hidden></div>
@@ -128,7 +162,7 @@ body.en-portada .hud:not(#portada):not(#aviso),body.en-portada #mn{visibility:hi
 <div id="avisos" aria-live="polite"></div>
 <button id="alerta-t" hidden aria-live="assertive"></button>
 <div id="mando" hidden><canvas id="mando-c" width="24" height="24"></canvas><div><b id="mando-n"></b><span id="mando-t"></span></div></div>
-<div class="hud" id="des" hidden style="left:calc(max(8px,env(safe-area-inset-left,0px)));top:calc(52px + env(safe-area-inset-top,0px));max-width:min(470px,62vw);font-size:10.5px;padding:4px 6px;background:rgba(9,19,24,.72)"></div><div class="hud" id="pa" hidden style="right:calc(max(8px,env(safe-area-inset-right,0px)) + 52px);top:calc(6px + env(safe-area-inset-top,0px));max-width:50vw;font-size:10.5px;padding:4px 6px;background:rgba(9,19,24,.68)"><div id="pa-t"></div><div id="pa-v" class="et"></div><div class="acc" style="display:flex;gap:3px;margin-top:4px;flex-wrap:wrap"><button id="a-prep">Preparar ataque</button><button id="a-lanz" aria-pressed="false">Lanzar a...</button><button id="a-cap">Patrulla</button><button id="a-exp">Explorar</button></div></div>
+<div class="hud" id="des" hidden style="left:calc(max(8px,env(safe-area-inset-left,0px)));top:calc(52px + env(safe-area-inset-top,0px));max-width:min(470px,62vw);font-size:10.5px;padding:4px 6px;background:rgba(9,19,24,.72)"></div><div class="hud" id="pa" hidden style="right:calc(max(8px,env(safe-area-inset-right,0px)) + 52px);top:calc(52px + env(safe-area-inset-top,0px));max-width:50vw;font-size:10.5px;padding:4px 6px;background:rgba(9,19,24,.68)"><div id="pa-t"></div><div id="pa-v" class="et"></div><div class="acc" style="display:flex;gap:3px;margin-top:4px;flex-wrap:wrap"><button id="a-prep">Preparar ataque</button><button id="a-lanz" aria-pressed="false">Lanzar a...</button><button id="a-cap">Patrulla</button><button id="a-exp">Explorar</button><button id="a-todos" title="Todos los aviones, a por el blanco marcado">✈ A por el blanco</button></div></div>
 <div class="hud" id="plano" hidden>
  <div id="casco"></div>
  <div id="resu"></div>
@@ -136,8 +170,21 @@ body.en-portada .hud:not(#portada):not(#aviso),body.en-portada #mn{visibility:hi
 </div>
 <div class="hud" id="salir" hidden><strong>¿Volver al menú principal?</strong><div style="margin-top:6px">Se abandona la misión y se pierde el progreso de esta batalla. Las misiones ya terminadas no se tocan.</div><div style="display:flex;gap:5px;margin-top:9px"><button id="sal-n" style="padding-inline:14px">Seguir jugando</button><button id="sal-s" class="peligro" style="padding-inline:14px">Salir al menú</button></div></div>
 <div class="hud" id="fin" hidden><strong id="fin-t"></strong><div id="fin-d"></div><div style="display:flex;gap:5px;margin-top:9px"><button id="fin-b" style="padding-inline:14px">Repetir</button><button id="fin-m" style="padding-inline:14px">Menú</button><button id="fin-s" style="padding-inline:14px" hidden>Siguiente misión</button></div></div>
-<div class="hud" id="portada"><div><h1>War Tides</h1><p class="f2">Naval Warfare WW2</p><div class="acc"><button id="p-jugar" data-t>Jugar</button><button id="p-prueba" data-t>Batalla de prueba</button><button id="p-cine" data-t>Modo cine</button></div></div></div>
-<div class="hud" id="menu"><div><button id="m-atras" data-t>‹ Portada</button><h1>War Tides</h1><img id="m-b" width="42" height="28" style="float:right;margin:6px 0 4px 8px;border:1px solid var(--linea)"><h2 id="m-t"></h2><p class="f2" id="m-f"></p><p id="m-cap" class="et"></p><canvas id="m-mapa" width="300" height="150" style="width:100%;max-width:420px;background:#0b1d2c;border:1px solid var(--linea);display:block;margin:6px 0"></canvas><p class="et" id="m-mapa-e" style="margin:0 0 6px"></p><p id="m-c"></p><p><b id="m-o"></b></p><div id="gmi"></div><div id="m-l" class="et" style="min-height:1em;margin-top:5px"></div><div id="gd"><span class="et">Dificultad</span><button data-d="facil">Fácil</button><button data-d="normal">Normal</button><button data-d="dificil">Difícil</button><span id="gid" style="display:flex;gap:4px;margin-left:12px"><button data-id="es">ES</button><button data-id="en">EN</button></span></div><div id="gfi"><span class="et">Formación</span><button data-fi="">Histórica</button><button data-fi="columna">Columna</button><button data-fi="linea">Línea</button><button data-fi="pantalla">Pantalla</button><button data-fi="circulo">Círculo</button></div><div id="gbq"><span class="et">Salen</span></div><details id="hs" hidden><summary class="et">Hoja de servicios</summary><div id="hs-l"></div></details><details id="ast" hidden><summary class="et">Astillero</summary><div id="ast-l"></div></details><div id="tienda" hidden><span id="t-m" class="resto"></span> <button id="t-c">Desbloquear la campaña</button> <button id="t-r">Restaurar compra</button></div><div class="acc"><button id="m-savo">Empezar la misión</button><button id="m-prueba">Batalla de prueba</button><button id="m-cine">Modo cine</button></div></div></div>
+<div class="hud" id="portada"><div class="pt-w"><p class="pt-k">Zenit Studio</p><h1>War Tides</h1><p class="f2">Naval Warfare WW2</p><div class="acc"><button id="p-jugar" data-t>Jugar</button><button id="p-prueba" data-t>Batalla de prueba</button><button id="p-cine" data-t>Modo cine</button></div></div></div>
+<div class="hud" id="menu"><div class="mn-w">
+<header class="mn-cab"><button id="m-atras" data-t>‹ Portada</button><div><h1>War Tides</h1><span class="f2" data-t>Elige tu misión</span></div></header>
+<div class="mn-cols">
+<section class="mn-izq"><div class="et" data-t>Campañas y misiones</div><div id="gmi"></div><div id="m-l" class="et" style="min-height:1em;margin-top:5px"></div></section>
+<section class="mn-der">
+<div class="mn-tit"><img id="m-b" width="42" height="28" alt=""><div><h2 id="m-t"></h2><p class="f2" id="m-f"></p><p id="m-cap" class="et"></p></div></div>
+<canvas id="m-mapa" width="300" height="150"></canvas><p class="et" id="m-mapa-e"></p>
+<p id="m-c"></p><p class="mn-obj"><b id="m-o"></b></p>
+<div class="mn-opc"><div id="gd"><span class="et">Dificultad</span><button data-d="facil">Fácil</button><button data-d="normal">Normal</button><button data-d="dificil">Difícil</button><span id="gid"><button data-id="es">ES</button><button data-id="en">EN</button></span></div><div id="gfi"><span class="et">Formación</span><button data-fi="">Histórica</button><button data-fi="columna">Columna</button><button data-fi="linea">Línea</button><button data-fi="pantalla">Pantalla</button><button data-fi="circulo">Círculo</button></div><div id="gbq"><span class="et">Salen</span></div></div>
+<details id="hs" hidden><summary class="et">Hoja de servicios</summary><div id="hs-l"></div></details><details id="ast" hidden><summary class="et">Astillero</summary><div id="ast-l"></div></details>
+<div id="tienda" hidden><span id="t-m" class="resto"></span> <button id="t-c">Desbloquear la campaña</button> <button id="t-r">Restaurar compra</button></div>
+</section></div>
+<footer class="mn-pie"><button id="m-savo">Empezar la misión</button><button id="m-prueba">Batalla de prueba</button><button id="m-cine">Modo cine</button></footer>
+</div></div>
 <div class="hud" id="aviso">Cargando…</div>
 <div id="gira" role="alert"><b aria-hidden="true">⟳</b><span data-t>Gira el móvil: se juega en horizontal.</span></div>
 </body></html>
