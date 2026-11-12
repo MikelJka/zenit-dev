@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-C50_TISk.js"></script>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-DP22Aj_v.js"></script>
 </head>
 <body><title>War Tides Banco de Pruebas</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -16,6 +16,7 @@ body.cine .hud,body.cine .etq{display:none!important}
 body.medir #med{display:block}
 #b-centra{right:max(8px,env(safe-area-inset-right,0px));top:calc(52px + env(safe-area-inset-top,0px));width:44px;height:40px;padding:0;font-size:18px;z-index:3}#b-nada{border-color:var(--ambar)}
 #b-pausa,#b-vel{right:max(8px,env(safe-area-inset-right,0px));width:44px;height:40px;padding:0;font-size:16px;z-index:3}#b-pausa{top:calc(98px + env(safe-area-inset-top,0px))}#b-vel{top:calc(144px + env(safe-area-inset-top,0px));font-size:13px}
+#b-salta{right:max(8px,env(safe-area-inset-right,0px));top:calc(190px + env(safe-area-inset-top,0px));width:44px;height:40px;padding:0;font-size:16px;z-index:3}#b-salta[aria-pressed="true"]{background:rgba(224,179,91,.3);border-color:var(--ambar)}
 #pausa-et{right:calc(max(8px,env(safe-area-inset-right,0px)) + 52px);top:calc(108px + env(safe-area-inset-top,0px));font:700 13px var(--mono);letter-spacing:.3em;color:var(--ambar);border-color:var(--ambar);z-index:4;pointer-events:none}
 #mn{right:max(8px,env(safe-area-inset-right,0px));top:calc(6px + env(safe-area-inset-top,0px));width:44px;height:40px;padding:0;font-size:18px;z-index:3}
 .et{color:var(--suave);font-size:10px;letter-spacing:.08em;text-transform:uppercase}
@@ -76,7 +77,7 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
 #portada h1{font:700 34px/1.1 var(--mono);letter-spacing:.04em;text-shadow:0 2px 8px #000}
 #portada p{text-shadow:0 1px 4px #000}
 #portada .acc button{min-height:46px;padding-inline:18px;font-size:14px}
-body.en-portada .hud:not(#portada):not(#aviso):not(#logros),body.en-portada #mn,body.en-portada #b-pausa,body.en-portada #b-vel,body.en-portada #b-centra{visibility:hidden}
+body.en-portada .hud:not(#portada):not(#aviso):not(#logros),body.en-portada #mn,body.en-portada #b-pausa,body.en-portada #b-vel,body.en-portada #b-salta,body.en-portada #b-centra{visibility:hidden}
 #menu{inset:0;z-index:5;background:rgba(5,14,19,.96);display:flex;align-items:flex-start;justify-content:center;padding-inline:max(16px,env(safe-area-inset-left,0px));overflow:auto;border:0;touch-action:pan-y}
 #menu>div{max-width:680px;padding-block:12px}
 #menu h1{font:700 26px/1.1 var(--mono);letter-spacing:.02em;margin-bottom:2px}
@@ -144,12 +145,14 @@ body.tuto-dim #ficha,body.tuto-dim .hud{}
 .medalla{border-color:var(--ambar)!important;color:var(--ambar)}
 #tuto{left:50%;transform:translateX(-50%);top:calc(86px + env(safe-area-inset-top,0px));max-width:min(560px,88vw);z-index:6;border-color:var(--ambar);background:rgba(20,17,10,.9);text-align:center;padding:9px 12px}
 #tuto-t{font-size:13px;line-height:1.4;margin:3px 0 6px}#tuto-s{min-height:30px;padding-inline:10px;font-size:11px}#tuto.ok{border-color:var(--bien)}
+.mn-nar,.nar{font-style:italic;color:var(--suave);border-left:3px solid var(--suave);padding-left:9px;margin-top:8px}.mn-nar::before,.nar::before{content:"🎙 ";font-style:normal}
 </style>
 <canvas id="mapa"></canvas><canvas id="sonar" hidden></canvas><div id="etq"></div>
 <div class="hud" id="med"><b id="fps">–</b><span class="et">fps</span> <span id="p1">–</span> · <span id="tm">0:00</span> · <span id="nb">–</span> barcos · <span id="es">–</span><br><span class="et">Por minuto</span> <span id="cm">–</span></div>
 <button class="hud" id="b-centra" aria-label="Centrar la vista en tu flota" title="Centrar en la flota">◎</button>
 <button class="hud" id="b-pausa" aria-label="Pausar la batalla" title="Pausa (barra espaciadora)">⏸</button>
 <button class="hud" id="b-vel" aria-label="Velocidad del tiempo" title="Velocidad">×1</button>
+<button class="hud" id="b-salta" aria-label="Saltar el tiempo muerto hasta el contacto" title="Avanzar rápido hasta el combate">⏭</button>
 <div class="hud" id="pausa-et" hidden>PAUSA</div>
 <button class="hud" id="mn" aria-pressed="false" aria-label="Abrir ajustes">☰</button>
 <div class="hud" id="ctl" hidden>
@@ -199,7 +202,7 @@ body.tuto-dim #ficha,body.tuto-dim .hud{}
 <section class="mn-der">
 <div class="mn-tit"><img id="m-b" width="42" height="28" alt=""><div><h2 id="m-t"></h2><p class="f2" id="m-f"></p><p id="m-cap" class="et"></p></div></div>
 <canvas id="m-mapa" width="300" height="150"></canvas><p class="et" id="m-mapa-e"></p>
-<p id="m-c"></p><p class="mn-obj"><b id="m-o"></b></p>
+<p id="m-nar" class="mn-nar" hidden></p><p id="m-c"></p><p class="mn-obj"><b id="m-o"></b></p>
 <div class="mn-opc"><div id="gd"><span class="et">Dificultad</span><button data-d="facil">Fácil</button><button data-d="normal">Normal</button><button data-d="dificil">Difícil</button><span id="gid"><button data-id="es">ES</button><button data-id="en">EN</button></span></div><div id="gfi"><span class="et">Formación</span><button data-fi="">Histórica</button><button data-fi="columna">Columna</button><button data-fi="linea">Línea</button><button data-fi="pantalla">Pantalla</button><button data-fi="circulo">Círculo</button></div><div id="gbq"><span class="et">Salen</span></div></div>
 <details id="hs" hidden><summary class="et">Hoja de servicios</summary><div id="hs-l"></div></details><details id="ast" hidden><summary class="et">Astillero</summary><div id="ast-l"></div></details>
 <div id="tienda" hidden><span id="t-m" class="resto"></span> <button id="t-c">Desbloquear la campaña</button> <button id="t-r">Restaurar compra</button></div>
