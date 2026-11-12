@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-gg7FWg1Z.js"></script>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/index-C50_TISk.js"></script>
 </head>
 <body><title>War Tides Banco de Pruebas</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -15,6 +15,8 @@ body.cine .hud,body.cine .etq{display:none!important}
 #med b{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;margin-right:3px}
 body.medir #med{display:block}
 #b-centra{right:max(8px,env(safe-area-inset-right,0px));top:calc(52px + env(safe-area-inset-top,0px));width:44px;height:40px;padding:0;font-size:18px;z-index:3}#b-nada{border-color:var(--ambar)}
+#b-pausa,#b-vel{right:max(8px,env(safe-area-inset-right,0px));width:44px;height:40px;padding:0;font-size:16px;z-index:3}#b-pausa{top:calc(98px + env(safe-area-inset-top,0px))}#b-vel{top:calc(144px + env(safe-area-inset-top,0px));font-size:13px}
+#pausa-et{right:calc(max(8px,env(safe-area-inset-right,0px)) + 52px);top:calc(108px + env(safe-area-inset-top,0px));font:700 13px var(--mono);letter-spacing:.3em;color:var(--ambar);border-color:var(--ambar);z-index:4;pointer-events:none}
 #mn{right:max(8px,env(safe-area-inset-right,0px));top:calc(6px + env(safe-area-inset-top,0px));width:44px;height:40px;padding:0;font-size:18px;z-index:3}
 .et{color:var(--suave);font-size:10px;letter-spacing:.08em;text-transform:uppercase}
 .f{display:flex;justify-content:space-between;gap:10px;font-variant-numeric:tabular-nums}
@@ -74,7 +76,7 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
 #portada h1{font:700 34px/1.1 var(--mono);letter-spacing:.04em;text-shadow:0 2px 8px #000}
 #portada p{text-shadow:0 1px 4px #000}
 #portada .acc button{min-height:46px;padding-inline:18px;font-size:14px}
-body.en-portada .hud:not(#portada):not(#aviso),body.en-portada #mn,body.en-portada #b-centra{visibility:hidden}
+body.en-portada .hud:not(#portada):not(#aviso):not(#logros),body.en-portada #mn,body.en-portada #b-pausa,body.en-portada #b-vel,body.en-portada #b-centra{visibility:hidden}
 #menu{inset:0;z-index:5;background:rgba(5,14,19,.96);display:flex;align-items:flex-start;justify-content:center;padding-inline:max(16px,env(safe-area-inset-left,0px));overflow:auto;border:0;touch-action:pan-y}
 #menu>div{max-width:680px;padding-block:12px}
 #menu h1{font:700 26px/1.1 var(--mono);letter-spacing:.02em;margin-bottom:2px}
@@ -131,10 +133,24 @@ body.en-portada .hud:not(#portada):not(#aviso),body.en-portada #mn,body.en-porta
 #flota::-webkit-scrollbar{display:none}#flota button{flex:none;min-width:58px;min-height:34px;padding:2px 8px;font-size:11px;line-height:1.15;text-align:left;border-radius:5px;position:relative}
 #flota button small{display:block;color:var(--suave);font-size:9px}#flota button[aria-pressed="true"]{border-color:var(--ambar);background:rgba(224,179,91,.28);color:var(--texto)}#flota button.mal{border-color:var(--mal)}#flota button.med{border-color:var(--ambar)}
 body.en-portada #flota{visibility:hidden}
+#tabs{display:flex;gap:3px;flex:1;min-width:0}#tabs button{flex:1;min-height:34px;padding-inline:4px;font-size:11px;border-radius:6px 6px 0 0;border-bottom-color:transparent}#tabs button[aria-pressed="true"]{background:rgba(224,179,91,.22);border-color:var(--ambar);color:var(--texto)}
+#gm[data-t="mover"] .gr:not(.t-mover),#gm[data-t="armas"] .gr:not(.t-armas),#gm[data-t="barco"] .gr:not(.t-barco),#gm[data-t="flota"] .gr:not(.t-flota){display:none}
+#ficha .acc.plegado #tabs{display:none}#ficha .gr{padding:4px;border:1px solid var(--linea);border-radius:0 6px 6px 6px;background:rgba(255,255,255,.03)}#ficha .gr button{min-height:38px}#ficha .gr .et{display:none}
+body.tuto-dim #ficha,body.tuto-dim .hud{}
+#logros{inset:0;z-index:9;background:rgba(5,14,19,.97);overflow:auto;padding:max(12px,env(safe-area-inset-top,0px)) max(14px,env(safe-area-inset-right,0px)) 14px max(14px,env(safe-area-inset-left,0px));touch-action:pan-y}
+.lg-w{max-width:760px;margin:0 auto}.lg-w header{display:flex;gap:12px;align-items:center;border-bottom:1px solid var(--linea);padding-bottom:8px;position:sticky;top:0;background:rgba(5,14,19,.97)}.lg-w h2{margin:0;color:var(--ambar)}#lg-x{margin-left:auto;min-height:40px;padding-inline:14px}
+#lg-l{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px;margin-top:10px}.md{display:flex;gap:10px;align-items:center;border:1px solid var(--linea);border-radius:8px;padding:9px 10px;opacity:.55}.md.ok{opacity:1;border-color:var(--ambar);background:rgba(224,179,91,.08)}
+.md .ic{font-size:26px;width:36px;text-align:center;flex:none;filter:grayscale(1)}.md.ok .ic{filter:none}.md b{display:block;font-size:13px}.md span{font-size:11px;color:var(--suave)}.md .pb{height:4px;background:rgba(255,255,255,.12);border-radius:2px;margin-top:5px;overflow:hidden}.md .pb i{display:block;height:100%;background:var(--ambar)}
+.medalla{border-color:var(--ambar)!important;color:var(--ambar)}
+#tuto{left:50%;transform:translateX(-50%);top:calc(86px + env(safe-area-inset-top,0px));max-width:min(560px,88vw);z-index:6;border-color:var(--ambar);background:rgba(20,17,10,.9);text-align:center;padding:9px 12px}
+#tuto-t{font-size:13px;line-height:1.4;margin:3px 0 6px}#tuto-s{min-height:30px;padding-inline:10px;font-size:11px}#tuto.ok{border-color:var(--bien)}
 </style>
 <canvas id="mapa"></canvas><canvas id="sonar" hidden></canvas><div id="etq"></div>
 <div class="hud" id="med"><b id="fps">–</b><span class="et">fps</span> <span id="p1">–</span> · <span id="tm">0:00</span> · <span id="nb">–</span> barcos · <span id="es">–</span><br><span class="et">Por minuto</span> <span id="cm">–</span></div>
 <button class="hud" id="b-centra" aria-label="Centrar la vista en tu flota" title="Centrar en la flota">◎</button>
+<button class="hud" id="b-pausa" aria-label="Pausar la batalla" title="Pausa (barra espaciadora)">⏸</button>
+<button class="hud" id="b-vel" aria-label="Velocidad del tiempo" title="Velocidad">×1</button>
+<div class="hud" id="pausa-et" hidden>PAUSA</div>
 <button class="hud" id="mn" aria-pressed="false" aria-label="Abrir ajustes">☰</button>
 <div class="hud" id="ctl" hidden>
  <div class="et">Velocidad</div><div class="g" id="gv"><button data-v="1">Real</button><button data-v="4">x1</button><button data-v="8">x2</button><button data-v="16">x3</button><button data-v="48">x4</button></div>
@@ -148,13 +164,15 @@ body.en-portada #flota{visibility:hidden}
  <button id="sal" class="peligro" hidden>Volver al menú principal</button>
 </div>
 <div class="hud" id="ficha"><strong><span id="hora" hidden></span><span id="fn">–</span></strong><span id="fc"></span> · <span id="fo"></span><br><span id="fa"></span>
- <div class="acc" id="gm"><button id="b-plega" aria-expanded="true" aria-label="Plegar órdenes">▾</button>
-  <div class="gr" id="gr-sel"><span class="et">Selección</span><button id="b-todos">Todos</button><button id="b-varios" aria-pressed="false">➕ Varios</button><button id="b-nada">✕ Ninguno</button></div>
-  <div class="gr" id="gr-maq"><span class="et">Máquinas</span><button data-e="0">Paro</button><button data-e=".33">⅓</button><button data-e=".66">⅔</button><button data-e="1">Toda</button></div>
-  <div class="gr" id="gr-arm"><span class="et">Armas</span><button id="pj">Proyectil: auto</button><button id="bt-n" hidden>Torpedos: ×5</button><button id="bt">Apuntar y lanzar</button><button id="bs" hidden>Inmersión</button><button id="tdc" hidden>Tirar con solución</button><button id="of" hidden>Abrir fuego</button></div>
-  <div class="gr" id="gr-bar"><span class="et">Barco</span><button id="hm" aria-pressed="false">Humo</button><button id="bd" aria-pressed="false">Daños</button><button id="co" aria-expanded="false">Formación</button><button id="rt">Retirarse</button></div></div>
+ <div class="acc" id="gm" data-t="mover"><button id="b-plega" aria-expanded="true" aria-label="Plegar órdenes">▾</button>
+  <div id="tabs"><button data-tab="mover">⛵ Mover</button><button data-tab="armas">🎯 Armas</button><button data-tab="barco">🛠 Barco</button><button data-tab="flota">👥 Flota</button></div>
+  <div class="gr t-flota" id="gr-sel"><span class="et">Selección</span><button id="b-todos">Todos</button><button id="b-varios" aria-pressed="false">➕ Varios</button><button id="b-nada">✕ Ninguno</button></div>
+  <div class="gr t-mover" id="gr-maq"><span class="et">Máquinas</span><button data-e="0">Paro</button><button data-e=".33">⅓</button><button data-e=".66">⅔</button><button data-e="1">Toda</button></div>
+  <div class="gr t-armas" id="gr-arm"><span class="et">Armas</span><button id="pj">Proyectil: auto</button><button id="bt-n" hidden>Torpedos: ×5</button><button id="bt">Apuntar y lanzar</button><button id="bs" hidden>Inmersión</button><button id="tdc" hidden>Tirar con solución</button><button id="of" hidden>Abrir fuego</button></div>
+  <div class="gr t-barco" id="gr-bar"><span class="et">Barco</span><button id="hm" aria-pressed="false">Humo</button><button id="bd" aria-pressed="false">Daños</button><button id="co" aria-expanded="false">Formación</button><button id="rt">Retirarse</button></div></div>
  <div class="acc" id="gf" hidden><button data-f="columna">Columna</button><button data-f="linea">Línea</button><button data-f="pantalla">Pantalla</button><button data-f="circulo">Círculo</button><button data-f="suelto">Suelto</button><button id="gg">Todo el grupo</button></div></div>
 <div class="hud" id="flota" hidden aria-label="Tu flota"></div>
+<div class="hud" id="tuto" hidden><div id="tuto-p" class="et"></div><div id="tuto-t"></div><button id="tuto-s">Saltar tutorial</button></div>
 <div id="recuadro" hidden></div>
 <div id="bajo" hidden><span id="bajo-p"></span></div>
 <div id="lluvia" hidden></div>
@@ -171,8 +189,9 @@ body.en-portada #flota{visibility:hidden}
  <div id="ordenes"><button id="o-brig">Enviar brigada</button><button id="o-cierra">Cerrar compartimento</button><button id="o-inunda">Inundar</button><button id="o-contra">Contrainundar</button><button id="o-aban" class="peligro">Abandonar el barco</button></div>
 </div>
 <div class="hud" id="salir" hidden><strong>¿Volver al menú principal?</strong><div style="margin-top:6px">Se abandona la misión y se pierde el progreso de esta batalla. Las misiones ya terminadas no se tocan.</div><div style="display:flex;gap:5px;margin-top:9px"><button id="sal-n" style="padding-inline:14px">Seguir jugando</button><button id="sal-s" class="peligro" style="padding-inline:14px">Salir al menú</button></div></div>
+<div class="hud" id="logros" hidden><div class="lg-w"><header><h2 data-t>Logros</h2><span id="lg-n" class="et"></span><button id="lg-x" data-t>✕ Cerrar</button></header><div id="lg-l"></div></div></div>
 <div class="hud" id="fin" hidden><strong id="fin-t"></strong><div id="fin-d"></div><div style="display:flex;gap:5px;margin-top:9px"><button id="fin-b" style="padding-inline:14px">Repetir</button><button id="fin-m" style="padding-inline:14px">Menú</button><button id="fin-s" style="padding-inline:14px" hidden>Siguiente misión</button></div></div>
-<div class="hud" id="portada"><div class="pt-w"><p class="pt-k">Zenit Studio</p><h1>War Tides</h1><p class="f2">Naval Warfare WW2</p><div class="acc"><button id="p-jugar" data-t>Jugar</button><button id="p-prueba" data-t>Batalla de prueba</button><button id="p-cine" data-t>Modo cine</button></div></div></div>
+<div class="hud" id="portada"><div class="pt-w"><p class="pt-k">Zenit Studio</p><h1>War Tides</h1><p class="f2">Naval Warfare WW2</p><div class="acc"><button id="p-jugar" data-t>Jugar</button><button id="p-prueba" data-t>Batalla de prueba</button><button id="p-logros" data-t>🏅 Logros</button><button id="p-cine" data-t>Modo cine</button></div></div></div>
 <div class="hud" id="menu"><div class="mn-w">
 <header class="mn-cab"><button id="m-atras" data-t>‹ Portada</button><div><h1>War Tides</h1><span class="f2" data-t>Elige tu misión</span></div></header>
 <div class="mn-cols">
