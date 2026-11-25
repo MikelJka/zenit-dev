@@ -27,7 +27,8 @@
 11.6
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.75
 },
 "fletcher": {
 "glb": "modelos/fletcher.glb",
@@ -44,7 +45,8 @@
 12.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.67
 },
 "essex": {
 "glb": "modelos/essex.glb",
@@ -56,7 +58,8 @@
 29.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 16.54
 },
 "mercante": {
 "glb": "modelos/mercante.glb",
@@ -68,13 +71,15 @@
 14.5
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 6.24
 },
 "tipo7": {
 "glb": "modelos/tipo7.glb",
 "ao": "modelos/tipo7_ao.webp",
 "chim": [],
-"torres": "indice"
+"torres": "indice",
+"cub": 1.89
 },
 "north_carolina": {
 "glb": "modelos/north_carolina.glb",
@@ -91,7 +96,8 @@
 29.5
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 8.97
 },
 "takao": {
 "glb": "modelos/takao.glb",
@@ -108,7 +114,8 @@
 21.5
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.79
 },
 "new_orleans": {
 "glb": "modelos/new_orleans.glb",
@@ -125,7 +132,8 @@
 19.75
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.27
 },
 "northampton": {
 "glb": "modelos/northampton.glb",
@@ -142,7 +150,8 @@
 20.75
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 8.29
 },
 "kent": {
 "glb": "modelos/kent.glb",
@@ -164,7 +173,8 @@
 20.9
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 9.3
 },
 "furutaka": {
 "glb": "modelos/furutaka.glb",
@@ -181,7 +191,8 @@
 23.15
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.24
 },
 "aoba": {
 "glb": "modelos/aoba.glb",
@@ -198,7 +209,8 @@
 24.85
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.25
 },
 "tenryu": {
 "glb": "modelos/tenryu.glb",
@@ -220,7 +232,8 @@
 15.7
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 5.68
 },
 "yubari": {
 "glb": "modelos/yubari.glb",
@@ -232,7 +245,8 @@
 15.7
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 5.67
 },
 "bagley": {
 "glb": "modelos/bagley.glb",
@@ -244,7 +258,8 @@
 11.3
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.45
 },
 "kamikaze": {
 "glb": "modelos/kamikaze.glb",
@@ -261,7 +276,8 @@
 11.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.13
 },
 "transporte": {
 "glb": "modelos/transporte.glb",
@@ -273,7 +289,8 @@
 18.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.27
 },
 "yorktown": {
 "glb": "modelos/yorktown.glb",
@@ -285,7 +302,8 @@
 27.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 15.48
 },
 "akagi": {
 "glb": "modelos/akagi.glb",
@@ -297,7 +315,8 @@
 27.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 15.45
 },
 "kaga": {
 "glb": "modelos/kaga.glb",
@@ -309,7 +328,8 @@
 27.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 15.46
 },
 "soryu": {
 "glb": "modelos/soryu.glb",
@@ -321,7 +341,8 @@
 24.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 12.3
 },
 "hiryu": {
 "glb": "modelos/hiryu.glb",
@@ -333,7 +354,8 @@
 24.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 12.32
 },
 "kongo": {
 "glb": "modelos/kongo.glb",
@@ -350,7 +372,8 @@
 28.4
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 8.44
 },
 "tone": {
 "glb": "modelos/tone.glb",
@@ -362,7 +385,8 @@
 22.3
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.28
 },
 "nagara": {
 "glb": "modelos/nagara.glb",
@@ -384,7 +408,8 @@
 16.55
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 5.7
 },
 "hipper": {
 "glb": "modelos/hipper.glb",
@@ -396,7 +421,8 @@
 21.45
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.31
 },
 "hood": {
 "glb": "modelos/hood.glb",
@@ -413,7 +439,8 @@
 26.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 9.45
 },
 "kgv": {
 "glb": "modelos/kgv.glb",
@@ -430,7 +457,8 @@
 26.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 9.45
 },
 "flower": {
 "glb": "modelos/flower.glb",
@@ -442,7 +470,8 @@
 11.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.14
 },
 "wickes": {
 "glb": "modelos/wickes.glb",
@@ -469,13 +498,15 @@
 11.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.13
 },
 "ko": {
 "glb": "modelos/ko.glb",
 "ao": "modelos/ko_ao.webp",
 "chim": [],
-"torres": "indice"
+"torres": "indice",
+"cub": 0.53
 },
 "lexington": {
 "glb": "modelos/lexington.glb",
@@ -487,7 +518,8 @@
 27.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 15.47
 },
 "shokaku": {
 "glb": "modelos/shokaku.glb",
@@ -499,7 +531,8 @@
 27.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 15.41
 },
 "atlanta": {
 "glb": "modelos/atlanta.glb",
@@ -516,7 +549,8 @@
 18.05
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.23
 },
 "south_dakota": {
 "glb": "modelos/south_dakota.glb",
@@ -528,7 +562,8 @@
 30.6
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 8.97
 },
 "sims": {
 "glb": "modelos/sims.glb",
@@ -540,7 +575,8 @@
 11.3
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.46
 },
 "benham": {
 "glb": "modelos/benham.glb",
@@ -552,7 +588,8 @@
 11.3
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.45
 },
 "mahan": {
 "glb": "modelos/mahan.glb",
@@ -569,7 +606,8 @@
 11.3
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.45
 },
 "gleaves": {
 "glb": "modelos/gleaves.glb",
@@ -586,7 +624,8 @@
 11.3
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.46
 },
 "fubuki": {
 "glb": "modelos/fubuki.glb",
@@ -603,7 +642,8 @@
 11.4
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.55
 },
 "akatsuki": {
 "glb": "modelos/akatsuki.glb",
@@ -620,7 +660,8 @@
 11.4
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.55
 },
 "shiratsuyu": {
 "glb": "modelos/shiratsuyu.glb",
@@ -637,7 +678,8 @@
 11.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.14
 },
 "akizuki": {
 "glb": "modelos/akizuki.glb",
@@ -649,7 +691,8 @@
 11.6
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.77
 },
 "asashio": {
 "glb": "modelos/asashio.glb",
@@ -666,7 +709,8 @@
 11.4
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.55
 },
 "sendai": {
 "glb": "modelos/sendai.glb",
@@ -693,7 +737,8 @@
 17.05
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 6.2
 },
 "grimsby": {
 "glb": "modelos/grimsby.glb",
@@ -705,7 +750,8 @@
 11.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.16
 },
 "shoreham": {
 "glb": "modelos/shoreham.glb",
@@ -717,13 +763,15 @@
 11.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.15
 },
 "gato": {
 "glb": "modelos/gato.glb",
 "ao": "modelos/gato_ao.webp",
 "chim": [],
-"torres": "indice"
+"torres": "indice",
+"cub": 2.32
 },
 "petrolero": {
 "glb": "modelos/petrolero.glb",
@@ -735,7 +783,8 @@
 16.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 6.83
 },
 "shinano": {
 "glb": "modelos/shinano.glb",
@@ -747,7 +796,8 @@
 22.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 10.57
 },
 "pensacola": {
 "glb": "modelos/pensacola.glb",
@@ -764,7 +814,8 @@
 20.75
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 8.28
 },
 "brooklyn": {
 "glb": "modelos/brooklyn.glb",
@@ -781,7 +832,8 @@
 19.9
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 8.27
 },
 "yamato": {
 "glb": "modelos/yamato.glb",
@@ -793,7 +845,8 @@
 32.1
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 10.56
 },
 "nagato": {
 "glb": "modelos/nagato.glb",
@@ -805,7 +858,8 @@
 29.4
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 9.49
 },
 "myoko": {
 "glb": "modelos/myoko.glb",
@@ -822,7 +876,8 @@
 21.1
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.8
 },
 "mogami": {
 "glb": "modelos/mogami.glb",
@@ -834,7 +889,8 @@
 21.1
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.79
 },
 "agano": {
 "glb": "modelos/agano.glb",
@@ -846,7 +902,8 @@
 16.7
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 6.72
 },
 "casablanca": {
 "glb": "modelos/casablanca.glb",
@@ -858,7 +915,8 @@
 20.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 8.34
 },
 "butler": {
 "glb": "modelos/butler.glb",
@@ -870,13 +928,15 @@
 11.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.16
 },
 "zuiho": {
 "glb": "modelos/zuiho.glb",
 "ao": "modelos/zuiho_ao.webp",
 "chim": [],
-"torres": "indice"
+"torres": "indice",
+"cub": 10.33
 },
 "junyo": {
 "glb": "modelos/junyo.glb",
@@ -888,7 +948,8 @@
 23.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 11.39
 },
 "porter": {
 "glb": "modelos/porter.glb",
@@ -905,7 +966,8 @@
 11.4
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.56
 },
 "benson": {
 "glb": "modelos/benson.glb",
@@ -922,7 +984,8 @@
 11.3
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.46
 },
 "kaibokan": {
 "glb": "modelos/kaibokan.glb",
@@ -934,13 +997,15 @@
 10.4
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 3.52
 },
 "tipo9": {
 "glb": "modelos/tipo9.glb",
 "ao": "modelos/tipo9_ao.webp",
 "chim": [],
-"torres": "indice"
+"torres": "indice",
+"cub": 2.0
 },
 "de_ruyter": {
 "glb": "modelos/de_ruyter.glb",
@@ -952,7 +1017,8 @@
 16.7
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 6.72
 },
 "java": {
 "glb": "modelos/java.glb",
@@ -969,7 +1035,8 @@
 16.7
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 6.73
 },
 "exeter": {
 "glb": "modelos/exeter.glb",
@@ -986,7 +1053,8 @@
 18.55
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.75
 },
 "perth": {
 "glb": "modelos/perth.glb",
@@ -1003,7 +1071,8 @@
 17.2
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.25
 },
 "clase_e": {
 "glb": "modelos/clase_e.glb",
@@ -1020,7 +1089,8 @@
 11.2
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.34
 },
 "clase_j": {
 "glb": "modelos/clase_j.glb",
@@ -1032,7 +1102,8 @@
 11.3
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.46
 },
 "admiralen": {
 "glb": "modelos/admiralen.glb",
@@ -1049,7 +1120,8 @@
 11.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.14
 },
 "nelson": {
 "glb": "modelos/nelson.glb",
@@ -1061,7 +1133,8 @@
 27.7
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 9.46
 },
 "scharnhorst": {
 "glb": "modelos/scharnhorst.glb",
@@ -1073,7 +1146,8 @@
 27.7
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 9.43
 },
 "town": {
 "glb": "modelos/town.glb",
@@ -1090,7 +1164,8 @@
 19.4
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.79
 },
 "fiji": {
 "glb": "modelos/fiji.glb",
@@ -1107,7 +1182,8 @@
 18.05
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.27
 },
 "clase_s": {
 "glb": "modelos/clase_s.glb",
@@ -1119,7 +1195,8 @@
 11.3
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.46
 },
 "clase_m": {
 "glb": "modelos/clase_m.glb",
@@ -1131,7 +1208,8 @@
 11.4
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.56
 },
 "clase_o": {
 "glb": "modelos/clase_o.glb",
@@ -1143,7 +1221,8 @@
 11.2
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.35
 },
 "fuso": {
 "glb": "modelos/fuso.glb",
@@ -1155,7 +1234,8 @@
 27.2
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 8.97
 },
 "colorado": {
 "glb": "modelos/colorado.glb",
@@ -1167,7 +1247,8 @@
 25.5
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 8.98
 },
 "tennessee": {
 "glb": "modelos/tennessee.glb",
@@ -1179,7 +1260,8 @@
 25.5
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 9.0
 },
 "cleveland": {
 "glb": "modelos/cleveland.glb",
@@ -1196,7 +1278,8 @@
 19.9
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 8.29
 },
 "mogami_cv": {
 "glb": "modelos/mogami_cv.glb",
@@ -1208,13 +1291,15 @@
 21.1
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.79
 },
 "pt": {
 "glb": "modelos/pt.glb",
 "ao": "modelos/pt_ao.webp",
 "chim": [],
-"torres": "indice"
+"torres": "indice",
+"cub": 1.69
 },
 "deutschland": {
 "glb": "modelos/deutschland.glb",
@@ -1226,7 +1311,8 @@
 21.1
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.81
 },
 "leander": {
 "glb": "modelos/leander.glb",
@@ -1238,7 +1324,8 @@
 17.2
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.24
 },
 "taiho": {
 "glb": "modelos/taiho.glb",
@@ -1250,19 +1337,22 @@
 22.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 10.39
 },
 "chitose": {
 "glb": "modelos/chitose.glb",
 "ao": "modelos/chitose_ao.webp",
 "chim": [],
-"torres": "indice"
+"torres": "indice",
+"cub": 9.31
 },
 "ryuho": {
 "glb": "modelos/ryuho.glb",
 "ao": "modelos/ryuho_ao.webp",
 "chim": [],
-"torres": "indice"
+"torres": "indice",
+"cub": 9.31
 },
 "independence": {
 "glb": "modelos/independence.glb",
@@ -1294,7 +1384,8 @@
 10.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 8.34
 },
 "tipo1934": {
 "glb": "modelos/tipo1934.glb",
@@ -1311,7 +1402,8 @@
 11.4
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.56
 },
 "tipo1936a": {
 "glb": "modelos/tipo1936a.glb",
@@ -1328,7 +1420,8 @@
 11.6
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.77
 },
 "clase_a": {
 "glb": "modelos/clase_a.glb",
@@ -1345,7 +1438,8 @@
 11.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.14
 },
 "halcyon": {
 "glb": "modelos/halcyon.glb",
@@ -1357,7 +1451,8 @@
 10.6
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 3.75
 },
 "queen_elizabeth": {
 "glb": "modelos/queen_elizabeth.glb",
@@ -1369,7 +1464,8 @@
 27.2
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 8.95
 },
 "zara": {
 "glb": "modelos/zara.glb",
@@ -1386,7 +1482,8 @@
 19.4
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 7.79
 },
 "oriani": {
 "glb": "modelos/oriani.glb",
@@ -1398,7 +1495,8 @@
 11.2
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.35
 },
 "tribal": {
 "glb": "modelos/tribal.glb",
@@ -1415,7 +1513,8 @@
 11.4
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.56
 },
 "river": {
 "glb": "modelos/river.glb",
@@ -1427,7 +1526,8 @@
 11.2
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.36
 },
 "vw_escolta": {
 "glb": "modelos/vw_escolta.glb",
@@ -1439,7 +1539,8 @@
 11.0
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.13
 },
 "egret": {
 "glb": "modelos/egret.glb",
@@ -1451,13 +1552,15 @@
 11.2
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.36
 },
 "tipo23": {
 "glb": "modelos/tipo23.glb",
 "ao": "modelos/tipo23_ao.webp",
 "chim": [],
-"torres": "indice"
+"torres": "indice",
+"cub": 1.24
 },
 "tipo35": {
 "glb": "modelos/tipo35.glb",
@@ -1469,25 +1572,29 @@
 10.6
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 3.72
 },
 "schnellboot": {
 "glb": "modelos/schnellboot.glb",
 "ao": "modelos/schnellboot_ao.webp",
 "chim": [],
-"torres": "indice"
+"torres": "indice",
+"cub": 1.68
 },
 "lvt": {
 "glb": "modelos/lvt.glb",
 "ao": "modelos/lvt_ao.webp",
 "chim": [],
-"torres": "indice"
+"torres": "indice",
+"cub": 0.65
 },
 "lcvp": {
 "glb": "modelos/lcvp.glb",
 "ao": "modelos/lcvp_ao.webp",
 "chim": [],
-"torres": "indice"
+"torres": "indice",
+"cub": 0.65
 },
 "sumner": {
 "glb": "modelos/sumner.glb",
@@ -1504,13 +1611,15 @@
 11.4
 ]
 ],
-"torres": "indice"
+"torres": "indice",
+"cub": 4.58
 },
 "lcs": {
 "glb": "modelos/lcs.glb",
 "ao": "modelos/lcs_ao.webp",
 "chim": [],
-"torres": "indice"
+"torres": "indice",
+"cub": 1.9
 }
 },
 "alias": {
