@@ -15,6 +15,7 @@
 "kagero": {
 "glb": "modelos/kagero.glb",
 "ao": "modelos/kagero_ao.webp",
+"lod": "modelos/kagero_lod.glb",
 "chim": [
 [
 9,
@@ -33,6 +34,7 @@
 "fletcher": {
 "glb": "modelos/fletcher.glb",
 "ao": "modelos/fletcher_ao.webp",
+"lod": "modelos/fletcher_lod.glb",
 "chim": [
 [
 3,
@@ -51,6 +53,7 @@
 "essex": {
 "glb": "modelos/essex.glb",
 "ao": "modelos/essex_ao.webp",
+"lod": "modelos/essex_lod.glb",
 "chim": [
 [
 -2,
@@ -64,6 +67,7 @@
 "mercante": {
 "glb": "modelos/mercante.glb",
 "ao": "modelos/mercante_ao.webp",
+"lod": "modelos/mercante_lod.glb",
 "chim": [
 [
 -6,
@@ -77,6 +81,7 @@
 "tipo7": {
 "glb": "modelos/tipo7.glb",
 "ao": "modelos/tipo7_ao.webp",
+"lod": "modelos/tipo7_lod.glb",
 "chim": [],
 "torres": "indice",
 "cub": 1.89
@@ -84,6 +89,7 @@
 "north_carolina": {
 "glb": "modelos/north_carolina.glb",
 "ao": "modelos/north_carolina_ao.webp",
+"lod": "modelos/north_carolina_lod.glb",
 "chim": [
 [
 -6,
@@ -102,6 +108,7 @@
 "takao": {
 "glb": "modelos/takao.glb",
 "ao": "modelos/takao_ao.webp",
+"lod": "modelos/takao_lod.glb",
 "chim": [
 [
 3,
@@ -120,6 +127,7 @@
 "new_orleans": {
 "glb": "modelos/new_orleans.glb",
 "ao": "modelos/new_orleans_ao.webp",
+"lod": "modelos/new_orleans_lod.glb",
 "chim": [
 [
 -6,
@@ -138,6 +146,7 @@
 "northampton": {
 "glb": "modelos/northampton.glb",
 "ao": "modelos/northampton_ao.webp",
+"lod": "modelos/northampton_lod.glb",
 "chim": [
 [
 -2,
@@ -156,6 +165,7 @@
 "kent": {
 "glb": "modelos/kent.glb",
 "ao": "modelos/kent_ao.webp",
+"lod": "modelos/kent_lod.glb",
 "chim": [
 [
 8,
@@ -179,6 +189,7 @@
 "furutaka": {
 "glb": "modelos/furutaka.glb",
 "ao": "modelos/furutaka_ao.webp",
+"lod": "modelos/furutaka_lod.glb",
 "chim": [
 [
 3,
@@ -197,6 +208,7 @@
 "aoba": {
 "glb": "modelos/aoba.glb",
 "ao": "modelos/aoba_ao.webp",
+"lod": "modelos/aoba_lod.glb",
 "chim": [
 [
 3,
@@ -215,6 +227,7 @@
 "tenryu": {
 "glb": "modelos/tenryu.glb",
 "ao": "modelos/tenryu_ao.webp",
+"lod": "modelos/tenryu_lod.glb",
 "chim": [
 [
 2,
@@ -238,6 +251,7 @@
 "yubari": {
 "glb": "modelos/yubari.glb",
 "ao": "modelos/yubari_ao.webp",
+"lod": "modelos/yubari_lod.glb",
 "chim": [
 [
 -2,
@@ -251,6 +265,7 @@
 "bagley": {
 "glb": "modelos/bagley.glb",
 "ao": "modelos/bagley_ao.webp",
+"lod": "modelos/bagley_lod.glb",
 "chim": [
 [
 2,
@@ -264,6 +279,7 @@
 "kamikaze": {
 "glb": "modelos/kamikaze.glb",
 "ao": "modelos/kamikaze_ao.webp",
+"lod": "modelos/kamikaze_lod.glb",
 "chim": [
 [
 10,
@@ -282,6 +298,7 @@
 "transporte": {
 "glb": "modelos/transporte.glb",
 "ao": "modelos/transporte_ao.webp",
+"lod": "modelos/transporte_lod.glb",
 "chim": [
 [
 -6,
@@ -295,6 +312,7 @@
 "yorktown": {
 "glb": "modelos/yorktown.glb",
 "ao": "modelos/yorktown_ao.webp",
+"lod": "modelos/yorktown_lod.glb",
 "chim": [
 [
 12.57,
@@ -308,6 +326,7 @@
 "akagi": {
 "glb": "modelos/akagi.glb",
 "ao": "modelos/akagi_ao.webp",
+"lod": "modelos/akagi_lod.glb",
 "chim": [
 [
 13.04,
@@ -321,6 +340,7 @@
 "kaga": {
 "glb": "modelos/kaga.glb",
 "ao": "modelos/kaga_ao.webp",
+"lod": "modelos/kaga_lod.glb",
 "chim": [
 [
 12.38,
@@ -334,6 +354,7 @@
 "soryu": {
 "glb": "modelos/soryu.glb",
 "ao": "modelos/soryu_ao.webp",
+"lod": "modelos/soryu_lod.glb",
 "chim": [
 [
 11.38,
@@ -347,6 +368,7 @@
 "hiryu": {
 "glb": "modelos/hiryu.glb",
 "ao": "modelos/hiryu_ao.webp",
+"lod": "modelos/hiryu_lod.glb",
 "chim": [
 [
 11.37,
@@ -360,6 +382,7 @@
 "kongo": {
 "glb": "modelos/kongo.glb",
 "ao": "modelos/kongo_ao.webp",
+"lod": "modelos/kongo_lod.glb",
 "chim": [
 [
 2,
@@ -378,6 +401,7 @@
 "tone": {
 "glb": "modelos/tone.glb",
 "ao": "modelos/tone_ao.webp",
+"lod": "modelos/tone_lod.glb",
 "chim": [
 [
 -2,
@@ -391,6 +415,7 @@
 "nagara": {
 "glb": "modelos/nagara.glb",
 "ao": "modelos/nagara_ao.webp",
+"lod": "modelos/nagara_lod.glb",
 "chim": [
 [
 2,
@@ -414,6 +439,7 @@
 "hipper": {
 "glb": "modelos/hipper.glb",
 "ao": "modelos/hipper_ao.webp",
+"lod": "modelos/hipper_lod.glb",
 "chim": [
 [
 -6,
@@ -427,6 +453,7 @@
 "hood": {
 "glb": "modelos/hood.glb",
 "ao": "modelos/hood_ao.webp",
+"lod": "modelos/hood_lod.glb",
 "chim": [
 [
 12,
@@ -445,6 +472,7 @@
 "kgv": {
 "glb": "modelos/kgv.glb",
 "ao": "modelos/kgv_ao.webp",
+"lod": "modelos/kgv_lod.glb",
 "chim": [
 [
 8,
@@ -463,6 +491,7 @@
 "flower": {
 "glb": "modelos/flower.glb",
 "ao": "modelos/flower_ao.webp",
+"lod": "modelos/flower_lod.glb",
 "chim": [
 [
 0,
@@ -476,6 +505,7 @@
 "wickes": {
 "glb": "modelos/wickes.glb",
 "ao": "modelos/wickes_ao.webp",
+"lod": "modelos/wickes_lod.glb",
 "chim": [
 [
 12,
@@ -504,6 +534,7 @@
 "ko": {
 "glb": "modelos/ko.glb",
 "ao": "modelos/ko_ao.webp",
+"lod": "modelos/ko_lod.glb",
 "chim": [],
 "torres": "indice",
 "cub": 0.53
@@ -511,6 +542,7 @@
 "lexington": {
 "glb": "modelos/lexington.glb",
 "ao": "modelos/lexington_ao.webp",
+"lod": "modelos/lexington_lod.glb",
 "chim": [
 [
 13.54,
@@ -524,6 +556,7 @@
 "shokaku": {
 "glb": "modelos/shokaku.glb",
 "ao": "modelos/shokaku_ao.webp",
+"lod": "modelos/shokaku_lod.glb",
 "chim": [
 [
 12.88,
@@ -537,6 +570,7 @@
 "atlanta": {
 "glb": "modelos/atlanta.glb",
 "ao": "modelos/atlanta_ao.webp",
+"lod": "modelos/atlanta_lod.glb",
 "chim": [
 [
 4,
@@ -555,6 +589,7 @@
 "south_dakota": {
 "glb": "modelos/south_dakota.glb",
 "ao": "modelos/south_dakota_ao.webp",
+"lod": "modelos/south_dakota_lod.glb",
 "chim": [
 [
 -8,
@@ -568,6 +603,7 @@
 "sims": {
 "glb": "modelos/sims.glb",
 "ao": "modelos/sims_ao.webp",
+"lod": "modelos/sims_lod.glb",
 "chim": [
 [
 0,
@@ -581,6 +617,7 @@
 "benham": {
 "glb": "modelos/benham.glb",
 "ao": "modelos/benham_ao.webp",
+"lod": "modelos/benham_lod.glb",
 "chim": [
 [
 1,
@@ -594,6 +631,7 @@
 "mahan": {
 "glb": "modelos/mahan.glb",
 "ao": "modelos/mahan_ao.webp",
+"lod": "modelos/mahan_lod.glb",
 "chim": [
 [
 5,
@@ -612,6 +650,7 @@
 "gleaves": {
 "glb": "modelos/gleaves.glb",
 "ao": "modelos/gleaves_ao.webp",
+"lod": "modelos/gleaves_lod.glb",
 "chim": [
 [
 7,
@@ -630,6 +669,7 @@
 "fubuki": {
 "glb": "modelos/fubuki.glb",
 "ao": "modelos/fubuki_ao.webp",
+"lod": "modelos/fubuki_lod.glb",
 "chim": [
 [
 13,
@@ -648,6 +688,7 @@
 "akatsuki": {
 "glb": "modelos/akatsuki.glb",
 "ao": "modelos/akatsuki_ao.webp",
+"lod": "modelos/akatsuki_lod.glb",
 "chim": [
 [
 13,
@@ -666,6 +707,7 @@
 "shiratsuyu": {
 "glb": "modelos/shiratsuyu.glb",
 "ao": "modelos/shiratsuyu_ao.webp",
+"lod": "modelos/shiratsuyu_lod.glb",
 "chim": [
 [
 11,
@@ -684,6 +726,7 @@
 "akizuki": {
 "glb": "modelos/akizuki.glb",
 "ao": "modelos/akizuki_ao.webp",
+"lod": "modelos/akizuki_lod.glb",
 "chim": [
 [
 0,
@@ -697,6 +740,7 @@
 "asashio": {
 "glb": "modelos/asashio.glb",
 "ao": "modelos/asashio_ao.webp",
+"lod": "modelos/asashio_lod.glb",
 "chim": [
 [
 13,
@@ -715,6 +759,7 @@
 "sendai": {
 "glb": "modelos/sendai.glb",
 "ao": "modelos/sendai_ao.webp",
+"lod": "modelos/sendai_lod.glb",
 "chim": [
 [
 14,
@@ -743,6 +788,7 @@
 "grimsby": {
 "glb": "modelos/grimsby.glb",
 "ao": "modelos/grimsby_ao.webp",
+"lod": "modelos/grimsby_lod.glb",
 "chim": [
 [
 2,
@@ -756,6 +802,7 @@
 "shoreham": {
 "glb": "modelos/shoreham.glb",
 "ao": "modelos/shoreham_ao.webp",
+"lod": "modelos/shoreham_lod.glb",
 "chim": [
 [
 2,
@@ -769,6 +816,7 @@
 "gato": {
 "glb": "modelos/gato.glb",
 "ao": "modelos/gato_ao.webp",
+"lod": "modelos/gato_lod.glb",
 "chim": [],
 "torres": "indice",
 "cub": 2.32
@@ -776,6 +824,7 @@
 "petrolero": {
 "glb": "modelos/petrolero.glb",
 "ao": "modelos/petrolero_ao.webp",
+"lod": "modelos/petrolero_lod.glb",
 "chim": [
 [
 -66,
@@ -789,6 +838,7 @@
 "shinano": {
 "glb": "modelos/shinano.glb",
 "ao": "modelos/shinano_ao.webp",
+"lod": "modelos/shinano_lod.glb",
 "chim": [
 [
 13.3,
@@ -802,6 +852,7 @@
 "pensacola": {
 "glb": "modelos/pensacola.glb",
 "ao": "modelos/pensacola_ao.webp",
+"lod": "modelos/pensacola_lod.glb",
 "chim": [
 [
 -2,
@@ -820,6 +871,7 @@
 "brooklyn": {
 "glb": "modelos/brooklyn.glb",
 "ao": "modelos/brooklyn_ao.webp",
+"lod": "modelos/brooklyn_lod.glb",
 "chim": [
 [
 6,
@@ -838,6 +890,7 @@
 "yamato": {
 "glb": "modelos/yamato.glb",
 "ao": "modelos/yamato_ao.webp",
+"lod": "modelos/yamato_lod.glb",
 "chim": [
 [
 -6,
@@ -851,6 +904,7 @@
 "nagato": {
 "glb": "modelos/nagato.glb",
 "ao": "modelos/nagato_ao.webp",
+"lod": "modelos/nagato_lod.glb",
 "chim": [
 [
 -4,
@@ -864,6 +918,7 @@
 "myoko": {
 "glb": "modelos/myoko.glb",
 "ao": "modelos/myoko_ao.webp",
+"lod": "modelos/myoko_lod.glb",
 "chim": [
 [
 8,
@@ -882,6 +937,7 @@
 "mogami": {
 "glb": "modelos/mogami.glb",
 "ao": "modelos/mogami_ao.webp",
+"lod": "modelos/mogami_lod.glb",
 "chim": [
 [
 2,
@@ -895,6 +951,7 @@
 "agano": {
 "glb": "modelos/agano.glb",
 "ao": "modelos/agano_ao.webp",
+"lod": "modelos/agano_lod.glb",
 "chim": [
 [
 2,
@@ -908,6 +965,7 @@
 "casablanca": {
 "glb": "modelos/casablanca.glb",
 "ao": "modelos/casablanca_ao.webp",
+"lod": "modelos/casablanca_lod.glb",
 "chim": [
 [
 7.8,
@@ -921,6 +979,7 @@
 "butler": {
 "glb": "modelos/butler.glb",
 "ao": "modelos/butler_ao.webp",
+"lod": "modelos/butler_lod.glb",
 "chim": [
 [
 0,
@@ -934,6 +993,7 @@
 "zuiho": {
 "glb": "modelos/zuiho.glb",
 "ao": "modelos/zuiho_ao.webp",
+"lod": "modelos/zuiho_lod.glb",
 "chim": [],
 "torres": "indice",
 "cub": 10.33
@@ -941,6 +1001,7 @@
 "junyo": {
 "glb": "modelos/junyo.glb",
 "ao": "modelos/junyo_ao.webp",
+"lod": "modelos/junyo_lod.glb",
 "chim": [
 [
 10.96,
@@ -954,6 +1015,7 @@
 "porter": {
 "glb": "modelos/porter.glb",
 "ao": "modelos/porter_ao.webp",
+"lod": "modelos/porter_lod.glb",
 "chim": [
 [
 6,
@@ -972,6 +1034,7 @@
 "benson": {
 "glb": "modelos/benson.glb",
 "ao": "modelos/benson_ao.webp",
+"lod": "modelos/benson_lod.glb",
 "chim": [
 [
 8,
@@ -990,6 +1053,7 @@
 "kaibokan": {
 "glb": "modelos/kaibokan.glb",
 "ao": "modelos/kaibokan_ao.webp",
+"lod": "modelos/kaibokan_lod.glb",
 "chim": [
 [
 -3,
@@ -1003,6 +1067,7 @@
 "tipo9": {
 "glb": "modelos/tipo9.glb",
 "ao": "modelos/tipo9_ao.webp",
+"lod": "modelos/tipo9_lod.glb",
 "chim": [],
 "torres": "indice",
 "cub": 2.0
@@ -1010,6 +1075,7 @@
 "de_ruyter": {
 "glb": "modelos/de_ruyter.glb",
 "ao": "modelos/de_ruyter_ao.webp",
+"lod": "modelos/de_ruyter_lod.glb",
 "chim": [
 [
 -6,
@@ -1023,6 +1089,7 @@
 "java": {
 "glb": "modelos/java.glb",
 "ao": "modelos/java_ao.webp",
+"lod": "modelos/java_lod.glb",
 "chim": [
 [
 4,
@@ -1041,6 +1108,7 @@
 "exeter": {
 "glb": "modelos/exeter.glb",
 "ao": "modelos/exeter_ao.webp",
+"lod": "modelos/exeter_lod.glb",
 "chim": [
 [
 4,
@@ -1059,6 +1127,7 @@
 "perth": {
 "glb": "modelos/perth.glb",
 "ao": "modelos/perth_ao.webp",
+"lod": "modelos/perth_lod.glb",
 "chim": [
 [
 8,
@@ -1077,6 +1146,7 @@
 "clase_e": {
 "glb": "modelos/clase_e.glb",
 "ao": "modelos/clase_e_ao.webp",
+"lod": "modelos/clase_e_lod.glb",
 "chim": [
 [
 6,
@@ -1095,6 +1165,7 @@
 "clase_j": {
 "glb": "modelos/clase_j.glb",
 "ao": "modelos/clase_j_ao.webp",
+"lod": "modelos/clase_j_lod.glb",
 "chim": [
 [
 2,
@@ -1108,6 +1179,7 @@
 "admiralen": {
 "glb": "modelos/admiralen.glb",
 "ao": "modelos/admiralen_ao.webp",
+"lod": "modelos/admiralen_lod.glb",
 "chim": [
 [
 6,
@@ -1126,6 +1198,7 @@
 "nelson": {
 "glb": "modelos/nelson.glb",
 "ao": "modelos/nelson_ao.webp",
+"lod": "modelos/nelson_lod.glb",
 "chim": [
 [
 -22,
@@ -1139,6 +1212,7 @@
 "scharnhorst": {
 "glb": "modelos/scharnhorst.glb",
 "ao": "modelos/scharnhorst_ao.webp",
+"lod": "modelos/scharnhorst_lod.glb",
 "chim": [
 [
 -6,
@@ -1152,6 +1226,7 @@
 "town": {
 "glb": "modelos/town.glb",
 "ao": "modelos/town_ao.webp",
+"lod": "modelos/town_lod.glb",
 "chim": [
 [
 8,
@@ -1170,6 +1245,7 @@
 "fiji": {
 "glb": "modelos/fiji.glb",
 "ao": "modelos/fiji_ao.webp",
+"lod": "modelos/fiji_lod.glb",
 "chim": [
 [
 6,
@@ -1188,6 +1264,7 @@
 "clase_s": {
 "glb": "modelos/clase_s.glb",
 "ao": "modelos/clase_s_ao.webp",
+"lod": "modelos/clase_s_lod.glb",
 "chim": [
 [
 2,
@@ -1201,6 +1278,7 @@
 "clase_m": {
 "glb": "modelos/clase_m.glb",
 "ao": "modelos/clase_m_ao.webp",
+"lod": "modelos/clase_m_lod.glb",
 "chim": [
 [
 0,
@@ -1214,6 +1292,7 @@
 "clase_o": {
 "glb": "modelos/clase_o.glb",
 "ao": "modelos/clase_o_ao.webp",
+"lod": "modelos/clase_o_lod.glb",
 "chim": [
 [
 2,
@@ -1227,6 +1306,7 @@
 "fuso": {
 "glb": "modelos/fuso.glb",
 "ao": "modelos/fuso_ao.webp",
+"lod": "modelos/fuso_lod.glb",
 "chim": [
 [
 -6,
@@ -1240,6 +1320,7 @@
 "colorado": {
 "glb": "modelos/colorado.glb",
 "ao": "modelos/colorado_ao.webp",
+"lod": "modelos/colorado_lod.glb",
 "chim": [
 [
 -4,
@@ -1253,6 +1334,7 @@
 "tennessee": {
 "glb": "modelos/tennessee.glb",
 "ao": "modelos/tennessee_ao.webp",
+"lod": "modelos/tennessee_lod.glb",
 "chim": [
 [
 -4,
@@ -1266,6 +1348,7 @@
 "cleveland": {
 "glb": "modelos/cleveland.glb",
 "ao": "modelos/cleveland_ao.webp",
+"lod": "modelos/cleveland_lod.glb",
 "chim": [
 [
 6,
@@ -1284,6 +1367,7 @@
 "mogami_cv": {
 "glb": "modelos/mogami_cv.glb",
 "ao": "modelos/mogami_cv_ao.webp",
+"lod": "modelos/mogami_cv_lod.glb",
 "chim": [
 [
 2,
@@ -1297,6 +1381,7 @@
 "pt": {
 "glb": "modelos/pt.glb",
 "ao": "modelos/pt_ao.webp",
+"lod": "modelos/pt_lod.glb",
 "chim": [],
 "torres": "indice",
 "cub": 1.69
@@ -1304,6 +1389,7 @@
 "deutschland": {
 "glb": "modelos/deutschland.glb",
 "ao": "modelos/deutschland_ao.webp",
+"lod": "modelos/deutschland_lod.glb",
 "chim": [
 [
 -6,
@@ -1317,6 +1403,7 @@
 "leander": {
 "glb": "modelos/leander.glb",
 "ao": "modelos/leander_ao.webp",
+"lod": "modelos/leander_lod.glb",
 "chim": [
 [
 -2,
@@ -1330,6 +1417,7 @@
 "taiho": {
 "glb": "modelos/taiho.glb",
 "ao": "modelos/taiho_ao.webp",
+"lod": "modelos/taiho_lod.glb",
 "chim": [
 [
 13.03,
@@ -1343,6 +1431,7 @@
 "chitose": {
 "glb": "modelos/chitose.glb",
 "ao": "modelos/chitose_ao.webp",
+"lod": "modelos/chitose_lod.glb",
 "chim": [],
 "torres": "indice",
 "cub": 9.31
@@ -1350,6 +1439,7 @@
 "ryuho": {
 "glb": "modelos/ryuho.glb",
 "ao": "modelos/ryuho_ao.webp",
+"lod": "modelos/ryuho_lod.glb",
 "chim": [],
 "torres": "indice",
 "cub": 9.31
@@ -1357,6 +1447,7 @@
 "independence": {
 "glb": "modelos/independence.glb",
 "ao": "modelos/independence_ao.webp",
+"lod": "modelos/independence_lod.glb",
 "chim": [
 [
 9.48,
@@ -1390,6 +1481,7 @@
 "tipo1934": {
 "glb": "modelos/tipo1934.glb",
 "ao": "modelos/tipo1934_ao.webp",
+"lod": "modelos/tipo1934_lod.glb",
 "chim": [
 [
 8,
@@ -1408,6 +1500,7 @@
 "tipo1936a": {
 "glb": "modelos/tipo1936a.glb",
 "ao": "modelos/tipo1936a_ao.webp",
+"lod": "modelos/tipo1936a_lod.glb",
 "chim": [
 [
 8,
@@ -1426,6 +1519,7 @@
 "clase_a": {
 "glb": "modelos/clase_a.glb",
 "ao": "modelos/clase_a_ao.webp",
+"lod": "modelos/clase_a_lod.glb",
 "chim": [
 [
 6,
@@ -1444,6 +1538,7 @@
 "halcyon": {
 "glb": "modelos/halcyon.glb",
 "ao": "modelos/halcyon_ao.webp",
+"lod": "modelos/halcyon_lod.glb",
 "chim": [
 [
 0,
@@ -1457,6 +1552,7 @@
 "queen_elizabeth": {
 "glb": "modelos/queen_elizabeth.glb",
 "ao": "modelos/queen_elizabeth_ao.webp",
+"lod": "modelos/queen_elizabeth_lod.glb",
 "chim": [
 [
 -2,
@@ -1470,6 +1566,7 @@
 "zara": {
 "glb": "modelos/zara.glb",
 "ao": "modelos/zara_ao.webp",
+"lod": "modelos/zara_lod.glb",
 "chim": [
 [
 6,
@@ -1488,6 +1585,7 @@
 "oriani": {
 "glb": "modelos/oriani.glb",
 "ao": "modelos/oriani_ao.webp",
+"lod": "modelos/oriani_lod.glb",
 "chim": [
 [
 -2,
@@ -1501,6 +1599,7 @@
 "tribal": {
 "glb": "modelos/tribal.glb",
 "ao": "modelos/tribal_ao.webp",
+"lod": "modelos/tribal_lod.glb",
 "chim": [
 [
 6,
@@ -1519,6 +1618,7 @@
 "river": {
 "glb": "modelos/river.glb",
 "ao": "modelos/river_ao.webp",
+"lod": "modelos/river_lod.glb",
 "chim": [
 [
 2,
@@ -1532,6 +1632,7 @@
 "vw_escolta": {
 "glb": "modelos/vw_escolta.glb",
 "ao": "modelos/vw_escolta_ao.webp",
+"lod": "modelos/vw_escolta_lod.glb",
 "chim": [
 [
 -4,
@@ -1545,6 +1646,7 @@
 "egret": {
 "glb": "modelos/egret.glb",
 "ao": "modelos/egret_ao.webp",
+"lod": "modelos/egret_lod.glb",
 "chim": [
 [
 0,
@@ -1558,6 +1660,7 @@
 "tipo23": {
 "glb": "modelos/tipo23.glb",
 "ao": "modelos/tipo23_ao.webp",
+"lod": "modelos/tipo23_lod.glb",
 "chim": [],
 "torres": "indice",
 "cub": 1.24
@@ -1565,6 +1668,7 @@
 "tipo35": {
 "glb": "modelos/tipo35.glb",
 "ao": "modelos/tipo35_ao.webp",
+"lod": "modelos/tipo35_lod.glb",
 "chim": [
 [
 2,
@@ -1578,6 +1682,7 @@
 "schnellboot": {
 "glb": "modelos/schnellboot.glb",
 "ao": "modelos/schnellboot_ao.webp",
+"lod": "modelos/schnellboot_lod.glb",
 "chim": [],
 "torres": "indice",
 "cub": 1.68
@@ -1585,6 +1690,7 @@
 "lvt": {
 "glb": "modelos/lvt.glb",
 "ao": "modelos/lvt_ao.webp",
+"lod": "modelos/lvt_lod.glb",
 "chim": [],
 "torres": "indice",
 "cub": 0.65
@@ -1592,6 +1698,7 @@
 "lcvp": {
 "glb": "modelos/lcvp.glb",
 "ao": "modelos/lcvp_ao.webp",
+"lod": "modelos/lcvp_lod.glb",
 "chim": [],
 "torres": "indice",
 "cub": 0.65
@@ -1599,6 +1706,7 @@
 "sumner": {
 "glb": "modelos/sumner.glb",
 "ao": "modelos/sumner_ao.webp",
+"lod": "modelos/sumner_lod.glb",
 "chim": [
 [
 8,
@@ -1617,6 +1725,7 @@
 "lcs": {
 "glb": "modelos/lcs.glb",
 "ao": "modelos/lcs_ao.webp",
+"lod": "modelos/lcs_lod.glb",
 "chim": [],
 "torres": "indice",
 "cub": 1.9
