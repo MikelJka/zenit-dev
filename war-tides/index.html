@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/main-BOSdiEtR.js"></script>
-  <link rel="modulepreload" crossorigin href="/zenit-dev/war-tides/assets/barco-7k75u_KW.js">
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/main-DwJbgvg3.js"></script>
+  <link rel="modulepreload" crossorigin href="/zenit-dev/war-tides/assets/barco-lpzV63KH.js">
 </head>
 <body><title>War Tides Banco de Pruebas</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -99,10 +99,12 @@ body.en-portada .hud:not(#portada):not(#aviso):not(#logros),body.en-portada #mn,
 #gbq button{padding-inline:7px;min-height:28px;font-size:11px}#gbq button[aria-pressed="false"]{opacity:.45;text-decoration:line-through}#ast-l .fila{display:flex;gap:4px;flex-wrap:wrap;margin:4px 0}#ast-l button{padding-inline:7px;min-height:28px;font-size:11px}#des .sec{margin:2px 0}#des .sec.tom b{color:var(--bien)}#des button{padding:1px 6px;min-height:22px;font-size:10px;margin-left:4px}.etq.sector{color:var(--ambar);font-weight:bold}.etq.sector.tom{color:var(--bien)}#gbq button.dique{opacity:.6;border-style:dashed}#gbq button.urg{border-color:var(--ambar)}
 #hora{font-weight:700;color:var(--ambar);margin-right:4px}
 #of{background:#6a1f14;border-color:var(--mal)}
-/* Solo se juega en horizontal (DISENO §9). El modo cine sí se ve en vertical (§13), así que ahí no sale. */
-#gira{display:none;position:fixed;inset:0;z-index:9;align-items:center;justify-content:center;flex-direction:column;gap:14px;text-align:center;padding:24px;background:var(--fondo);font:600 15px/1.4 var(--mono)}
-#gira b{font-size:44px;color:var(--ambar);font-weight:400}
-@media (orientation:portrait){body:not(.cine) #gira{display:flex}}
+/* Se juega mejor en horizontal (DISENO §9), pero el juego carga igual en vertical: solo en batalla sale una nota
+   pequeña que se va sola (orden de Mikel del 25-11). Portada, menú y modo cine, sin aviso. */
+#gira{display:none;position:fixed;z-index:9;left:50%;top:calc(64px + env(safe-area-inset-top,0px));transform:translateX(-50%);align-items:center;gap:8px;padding:7px 12px;border-radius:999px;background:rgba(8,20,28,.78);border:1px solid rgba(120,180,210,.3);backdrop-filter:blur(8px);font:600 12px/1.2 var(--mono);pointer-events:none;white-space:nowrap;animation:gira-v 6s ease forwards}
+#gira b{font-size:16px;color:var(--acento,#4fb0ff);font-weight:400}
+@keyframes gira-v{0%,80%{opacity:1}100%{opacity:0;visibility:hidden}}
+@media (orientation:portrait){body:not(.cine):not(.en-portada):has(#menu[hidden]) #gira{display:flex}}
 #aviso{inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding-inline:max(16px,env(safe-area-inset-left,0px));border:0;background:var(--fondo);font-size:15px}
 
 /* Portada y menú de misiones: diseño adaptable (móvil vertical, horizontal, tableta y PC). */
@@ -150,14 +152,131 @@ body.tuto-dim #ficha,body.tuto-dim .hud{}
 #aire{left:max(8px,env(safe-area-inset-left,0px));top:calc(52px + env(safe-area-inset-top,0px));max-width:min(420px,46vw);font-size:11px;line-height:1.3;padding:4px 7px;background:rgba(9,19,24,.62)}
 #aire div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}#aire .at{color:#ff9d8f}#aire .vu{color:#e6d27a}#aire .pt{color:#8fd9a0}#aire b{font-weight:700}
 body.en-portada #aire{visibility:hidden}
+
+/* ══ Tema de 2026-11-25 (pedido por Mikel con una imagen de referencia): paneles de cristal oscuro, bordes azulados,
+   esquinas redondeadas y acento azul. Va al final para mandar sobre lo anterior sin tocar la estructura. ══ */
+:root{--acento:#4fb0ff;--acento2:#2a72d8;--vidrio:rgba(8,19,27,.78);--vidrio2:rgba(13,28,38,.86);--borde:rgba(120,185,215,.24);--borde2:rgba(140,205,240,.5);--sans:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+.hud{background:var(--vidrio);border:1px solid var(--borde);border-radius:12px;box-shadow:0 8px 28px rgba(0,0,0,.38),inset 0 1px 0 rgba(255,255,255,.05)}
+button{border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.02));border-color:var(--borde);transition:background .15s,border-color .15s,box-shadow .15s}
+button:hover{border-color:var(--borde2)}
+button:disabled{opacity:.45}
+button[aria-pressed=true]{background:linear-gradient(180deg,rgba(79,176,255,.42),rgba(42,114,216,.26));color:#eef8ff;border-color:var(--acento);box-shadow:0 0 0 1px rgba(79,176,255,.3),0 0 14px rgba(79,176,255,.3)}
+.et{letter-spacing:.12em}
+/* Botonera de arriba a la derecha, en fila */
+#mn,#b-centra,#b-pausa,#b-vel,#b-salta{top:calc(8px + env(safe-area-inset-top,0px));width:44px;height:44px;border-radius:10px;font-size:18px;display:flex;align-items:center;justify-content:center;padding:0}
+#mn{right:max(8px,env(safe-area-inset-right,0px))}
+#b-salta{right:calc(max(8px,env(safe-area-inset-right,0px)) + 58px)}
+#b-vel{right:calc(max(8px,env(safe-area-inset-right,0px)) + 106px);font:700 14px var(--mono)}
+#b-pausa{right:calc(max(8px,env(safe-area-inset-right,0px)) + 154px)}
+#b-centra{right:calc(max(8px,env(safe-area-inset-right,0px)) + 202px)}
+#b-vel,#b-pausa[aria-pressed="true"]{background:linear-gradient(180deg,rgba(79,176,255,.42),rgba(42,114,216,.26));border-color:var(--acento);color:#eef8ff}
+#ctl{top:calc(62px + env(safe-area-inset-top,0px));width:210px;border-radius:12px;padding:10px;gap:7px}
+#pausa-et{right:auto;left:50%;transform:translateX(-50%);top:calc(70px + env(safe-area-inset-top,0px));border-radius:999px;padding:4px 14px;background:rgba(30,20,6,.8)}
+/* Reloj en el centro */
+#reloj{position:fixed;z-index:3;left:50%;transform:translateX(-50%);top:calc(6px + env(safe-area-inset-top,0px));padding:3px 20px 5px;text-align:center;border-radius:0 0 14px 14px;border-top:0;pointer-events:none;min-width:110px}
+#reloj b{display:block;font:700 24px/1.05 var(--mono);letter-spacing:.04em;font-variant-numeric:tabular-nums}
+#reloj span{display:block;font:600 9.5px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--suave);margin-top:1px}
+body.cine #reloj,body.en-portada #reloj{display:none}
+#obj{top:calc(66px + env(safe-area-inset-top,0px));border-radius:10px}
+#avisos{top:calc(104px + env(safe-area-inset-top,0px))}#avisos button{border-radius:10px;background:var(--vidrio2)}
+#tuto{top:calc(120px + env(safe-area-inset-top,0px));border-radius:12px}
+/* Tarjetas de la flota: nombre, clase, silueta de perfil y barra de vida */
+#flota{background:none;border:0;box-shadow:none;padding:0;gap:8px;top:calc(8px + env(safe-area-inset-top,0px));right:auto;max-width:calc(50vw - 80px)}
+#flota button{width:146px;min-height:0;padding:6px 8px 7px;border-radius:10px;background:var(--vidrio2);display:flex;flex-direction:column;gap:1px;text-align:left}
+#flota button .n{font:700 12px var(--mono);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#flota button small{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#flota button img{width:100%;height:24px;object-fit:contain;object-position:center bottom;margin:3px 0 2px;filter:drop-shadow(0 1px 1px rgba(0,0,0,.6))}
+#flota button .vida{display:block;height:4px;border-radius:2px;background:rgba(255,255,255,.12);overflow:hidden}
+#flota button .vida i{display:block;height:100%;width:100%;background:linear-gradient(90deg,#3fbf6a,#7ee08f);border-radius:2px;transition:width .3s}
+#flota button.med .vida i{background:linear-gradient(90deg,#d79b2c,#f0c35a)}#flota button.mal .vida i{background:linear-gradient(90deg,#c2412a,#f07055)}
+#flota button[aria-pressed="true"]{background:linear-gradient(180deg,rgba(40,90,140,.6),rgba(15,35,55,.85));border-color:var(--acento);box-shadow:0 0 0 1px rgba(79,176,255,.35),0 0 16px rgba(79,176,255,.3)}
+#flota button[aria-pressed="true"] .vida i{background:linear-gradient(90deg,#2a8ae0,#6cc4ff)}
+#flota button.mal,#flota button.med{border-color:var(--borde)}
+/* Ficha del barco */
+#ficha{padding:9px 12px 10px;width:min(540px,calc(100vw - 280px));min-width:min(380px,92vw);border-radius:14px}
+#ficha strong{font:700 17px var(--mono)}#ficha #fc,#ficha #fo{font-size:11.5px;color:var(--suave)}#fa{font-size:10.5px;color:var(--suave)}
+#fcab{display:flex;gap:10px;align-items:flex-start}#fcab>div:first-child{flex:1;min-width:0}
+#fbar{display:grid;gap:4px;width:120px;margin-top:4px;flex:none}#fbar div{display:flex;align-items:center;gap:5px;font:600 8.5px var(--mono);letter-spacing:.1em;color:var(--suave);text-transform:uppercase}
+#fbar div i{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.12);overflow:hidden}#fbar div b{display:block;height:100%;border-radius:3px;background:linear-gradient(90deg,#2a8ae0,#6cc4ff);transition:width .3s}
+#fbar div:first-child b{background:linear-gradient(90deg,#3fbf6a,#7ee08f)}#fbar div.mal b{background:linear-gradient(90deg,#c2412a,#f07055)}#fbar div:last-child b{background:linear-gradient(90deg,#b9c6cc,#eef3f5)}
+#fbar span{width:24px}
+#tabs{background:rgba(0,0,0,.28);border-radius:10px;padding:3px;gap:2px}
+#tabs button{border:0;border-radius:8px;background:transparent;min-height:36px;font-size:11.5px}
+#tabs button[aria-pressed="true"]{background:linear-gradient(180deg,rgba(79,176,255,.42),rgba(42,114,216,.26));box-shadow:none;border:0}
+#ficha .gr{border:0;border-radius:10px;background:rgba(255,255,255,.035);padding:5px;margin-top:5px}
+#ficha .gr button{min-height:42px;border-radius:8px;font-size:12px}
+#gr-maq{position:relative}
+#gr-maq button[data-e="0"]{color:#ffb9a8}
+#hora{display:none!important}
+#b-plega{border-radius:8px}
+#aire,#des,#pa,#plano,#fin,#salir{border-radius:14px}
+#mando{border-radius:14px;background:var(--vidrio2)}
+#plano #casco{border-radius:22px 60px 60px 22px}
+/* ── Portada ── */
+#portada{border:0;border-radius:0;box-shadow:none;background:radial-gradient(120% 90% at 0% 50%,rgba(4,12,18,.92) 0%,rgba(4,12,18,.6) 42%,rgba(4,12,18,0) 75%)}
+#portada .pt-w{width:min(400px,100%);padding:26px 24px 22px;border-radius:20px;background:rgba(8,19,27,.55);border:1px solid var(--borde);box-shadow:0 20px 60px rgba(0,0,0,.45)}
+#portada .pt-k{color:var(--acento);letter-spacing:.38em}
+#portada h1{font:800 clamp(38px,7vw,60px)/.95 var(--mono);letter-spacing:.06em;background:linear-gradient(180deg,#ffffff 0%,#cfe6f5 55%,#7fb6dc 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 3px 10px rgba(0,0,0,.6))}
+#portada .f2{color:var(--suave);letter-spacing:.32em;font-size:11px;margin:10px 0 22px}
+#portada .acc{gap:9px}
+#portada .acc button{display:flex;align-items:center;gap:12px;min-height:52px;border-radius:12px;background:rgba(255,255,255,.05);backdrop-filter:none;font:600 15px var(--mono)}
+#portada .acc button .ic{width:22px;text-align:center;font-size:16px;opacity:.9}
+#portada .acc button#p-jugar{background:linear-gradient(180deg,#4fb0ff,#2a72d8);color:#fff;border-color:#7cc6ff;box-shadow:0 8px 26px rgba(42,114,216,.45),inset 0 1px 0 rgba(255,255,255,.35);font-weight:800;letter-spacing:.06em}
+#portada .pt-pie{margin-top:16px;font:600 10px var(--mono);letter-spacing:.2em;color:var(--suave);text-transform:uppercase;opacity:.75}
+@media (max-width:640px) and (orientation:portrait){#portada{background:linear-gradient(180deg,rgba(4,12,18,0) 0%,rgba(4,12,18,.6) 45%,rgba(4,12,18,.92) 100%)}#portada .pt-w{width:100%}}
+@media (max-height:480px){#portada .pt-w{padding:14px 16px}#portada .f2{margin:6px 0 10px}#portada .acc button{min-height:42px}}
+/* ── Menú de misiones ── */
+#menu{border:0;border-radius:0;box-shadow:none;background:linear-gradient(180deg,rgba(4,11,17,.9),rgba(4,11,17,.96))}
+.mn-cab{border:1px solid var(--borde);border-radius:14px;background:var(--vidrio2);padding:8px 12px;margin-bottom:10px}
+.mn-cab h1{font:800 20px var(--mono);letter-spacing:.06em}.mn-cab .f2{letter-spacing:.2em;text-transform:uppercase;font-size:10px}
+.mn-izq,.mn-der{border:1px solid var(--borde);border-radius:14px;background:var(--vidrio);padding:12px 12px 16px;margin-bottom:10px}
+.camp{border-radius:12px;background:rgba(255,255,255,.03);padding:8px}
+.camp .et{color:var(--acento)}
+.camp button{border-radius:9px;min-height:40px;font-size:12px;padding-left:12px;position:relative}
+.camp button[aria-pressed="true"]{background:linear-gradient(90deg,rgba(79,176,255,.38),rgba(42,114,216,.12));border-color:var(--acento);box-shadow:0 0 12px rgba(79,176,255,.25)}
+#menu h2{color:#eaf4fa;font:800 20px var(--mono);letter-spacing:.03em}
+.mn-tit img{border-radius:4px}
+#m-mapa{border-radius:12px;border-color:var(--borde);box-shadow:inset 0 0 30px rgba(0,0,0,.4)}
+.mn-obj{border-left:3px solid var(--acento);background:rgba(79,176,255,.08);border-radius:0 10px 10px 0;padding:8px 10px}
+.mn-nar,.nar{border-left-color:var(--borde2)}
+#gd button,#gfi button,#gbq button,#gid button{border-radius:999px;padding-inline:12px}
+.mn-pie{border:1px solid var(--borde);border-radius:14px 14px 0 0;background:var(--vidrio2);padding:10px}
+.mn-pie button{border-radius:12px}
+#m-savo,.mn-pie #m-savo{background:linear-gradient(180deg,#4fb0ff,#2a72d8);color:#fff;border-color:#7cc6ff;box-shadow:0 8px 24px rgba(42,114,216,.4),inset 0 1px 0 rgba(255,255,255,.35);letter-spacing:.06em}
+#m-savo:disabled{filter:grayscale(.7)}
+#logros,#aviso{border:0;border-radius:0}
+.md{border-radius:12px}.md.ok{border-color:var(--acento);background:rgba(79,176,255,.08)}.md .pb i{background:var(--acento)}
+#tienda button{border-radius:10px}
+#m-cap{text-transform:none;letter-spacing:0;font-size:11.5px;line-height:1.4;color:var(--suave);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer}#m-cap.abierto{-webkit-line-clamp:unset}
+/* Móvil en horizontal (poca altura): todo más compacto para que se vea el mar */
+@media (max-height:480px){
+ #flota button{width:124px;padding:4px 7px 5px}#flota button img{height:18px;margin:2px 0 1px}#flota button .n{font-size:11px}
+ #reloj b{font-size:19px}#reloj{padding:2px 14px 3px}
+ #mn,#b-centra,#b-pausa,#b-vel,#b-salta{width:38px;height:38px;font-size:15px}
+ #b-salta{right:calc(max(8px,env(safe-area-inset-right,0px)) + 50px)}#b-vel{right:calc(max(8px,env(safe-area-inset-right,0px)) + 92px)}#b-pausa{right:calc(max(8px,env(safe-area-inset-right,0px)) + 134px)}#b-centra{right:calc(max(8px,env(safe-area-inset-right,0px)) + 176px)}
+ #ctl{top:calc(52px + env(safe-area-inset-top,0px))}
+ #ficha{width:min(460px,calc(100vw - 240px));min-width:340px;padding:6px 9px 7px}
+ #ficha strong{font-size:14px}#ficha #fc,#ficha #fo{font-size:10.5px}#fa{display:none}
+ #fbar{width:100px;margin-top:2px;gap:3px}
+ #tabs button{min-height:30px;font-size:10.5px}#ficha .gr button{min-height:34px;font-size:11px}#ficha .gr{padding:3px;margin-top:4px}
+}
+/* Móvil en vertical: la ficha ocupa el ancho y la flota baja de la botonera */
+@media (orientation:portrait) and (max-width:640px){
+ #ficha{width:auto;min-width:0;right:max(8px,env(safe-area-inset-right,0px))}
+ #flota{top:calc(58px + env(safe-area-inset-top,0px));max-width:calc(100vw - 16px)}
+ #reloj{left:max(8px,env(safe-area-inset-left,0px));transform:none;border-radius:12px;border-top:1px solid var(--borde);top:calc(8px + env(safe-area-inset-top,0px));min-width:0;padding:3px 10px}
+ #reloj b{font-size:18px}#reloj span{display:none}
+ #obj{top:calc(140px + env(safe-area-inset-top,0px))}
+}
 </style>
 <canvas id="mapa"></canvas><canvas id="sonar" hidden></canvas><div id="etq"></div>
 <div class="hud" id="med"><b id="fps">–</b><span class="et">fps</span> <span id="p1">–</span> · <span id="tm">0:00</span> · <span id="nb">–</span> barcos · <span id="es">–</span><br><span class="et">Por minuto</span> <span id="cm">–</span></div>
-<button class="hud" id="b-centra" aria-label="Centrar la vista en tu flota" title="Centrar en la flota">◎</button>
+<button class="hud" id="b-centra" aria-label="Centrar la vista en tu flota" title="Centrar en la flota">⌖</button>
 <button class="hud" id="b-pausa" aria-label="Pausar la batalla" title="Pausa (barra espaciadora)">⏸</button>
 <button class="hud" id="b-vel" aria-label="Velocidad del tiempo" title="Velocidad">×1</button>
 <button class="hud" id="b-salta" aria-label="Saltar el tiempo muerto hasta el contacto" title="Avanzar rápido hasta el combate">⏭</button>
 <div class="hud" id="pausa-et" hidden>PAUSA</div>
+<div class="hud" id="reloj" hidden><b id="reloj-h">--:--</b><span id="reloj-f"></span></div>
 <button class="hud" id="mn" aria-pressed="false" aria-label="Abrir ajustes">☰</button>
 <div class="hud" id="ctl" hidden>
  <div class="et">Velocidad</div><div class="g" id="gv"><button data-v="1">Real</button><button data-v="4">x1</button><button data-v="8">x2</button><button data-v="16">x3</button><button data-v="48">x4</button></div>
@@ -170,7 +289,7 @@ body.en-portada #aire{visibility:hidden}
  <button id="cp">Copiar resultado</button>
  <button id="sal" class="peligro" hidden>Volver al menú principal</button>
 </div>
-<div class="hud" id="ficha"><strong><span id="hora" hidden></span><span id="fn">–</span></strong><span id="fc"></span> · <span id="fo"></span><br><span id="fa"></span>
+<div class="hud" id="ficha"><div id="fcab"><div><strong><span id="hora" hidden></span><span id="fn">–</span></strong><span id="fc"></span> · <span id="fo"></span><br><span id="fa"></span></div><div id="fbar" aria-hidden="true"><div id="fb-c"><span>Cas</span><i><b></b></i></div><div id="fb-m"><span>Mun</span><i><b></b></i></div><div id="fb-f"><span>Fuel</span><i><b></b></i></div></div></div>
  <div class="acc" id="gm" data-t="mover"><button id="b-plega" aria-expanded="true" aria-label="Plegar órdenes">▾</button>
   <div id="tabs"><button data-tab="mover">⛵ Mover</button><button data-tab="armas">🎯 Armas</button><button data-tab="barco">🛠 Barco</button><button data-tab="flota">👥 Flota</button></div>
   <div class="gr t-flota" id="gr-sel"><span class="et">Selección</span><button id="b-todos">Todos</button><button id="b-varios" aria-pressed="false">➕ Varios</button><button id="b-nada">✕ Ninguno</button></div>
@@ -199,7 +318,7 @@ body.en-portada #aire{visibility:hidden}
 <div class="hud" id="salir" hidden><strong>¿Volver al menú principal?</strong><div style="margin-top:6px">Se abandona la misión y se pierde el progreso de esta batalla. Las misiones ya terminadas no se tocan.</div><div style="display:flex;gap:5px;margin-top:9px"><button id="sal-n" style="padding-inline:14px">Seguir jugando</button><button id="sal-s" class="peligro" style="padding-inline:14px">Salir al menú</button></div></div>
 <div class="hud" id="logros" hidden><div class="lg-w"><header><h2 data-t>Logros</h2><span id="lg-n" class="et"></span><button id="lg-x" data-t>✕ Cerrar</button></header><div id="lg-l"></div></div></div>
 <div class="hud" id="fin" hidden><strong id="fin-t"></strong><div id="fin-d"></div><div style="display:flex;gap:5px;margin-top:9px"><button id="fin-b" style="padding-inline:14px">Repetir</button><button id="fin-m" style="padding-inline:14px">Menú</button><button id="fin-s" style="padding-inline:14px" hidden>Siguiente misión</button></div></div>
-<div class="hud" id="portada"><div class="pt-w"><p class="pt-k">Zenit Studio</p><h1>War Tides</h1><p class="f2">Naval Warfare WW2</p><div class="acc"><button id="p-jugar" data-t>Jugar</button><button id="p-prueba" data-t>Batalla de prueba</button><button id="p-logros" data-t>🏅 Logros</button><button id="p-cine" data-t>Modo cine</button></div></div></div>
+<div class="hud" id="portada"><div class="pt-w"><p class="pt-k">Zenit Studio</p><h1>War Tides</h1><p class="f2">Naval Warfare WW2</p><div class="acc"><button id="p-jugar"><span class="ic">▶</span><span data-t>Jugar</span></button><button id="p-prueba"><span class="ic">⚓</span><span data-t>Batalla de prueba</span></button><button id="p-logros"><span class="ic">🏅</span><span data-t>Logros</span></button><button id="p-cine"><span class="ic">🎬</span><span data-t>Modo cine</span></button></div><p class="pt-pie"><span data-t>1939 – 1945 · 35 batallas históricas</span></p></div></div>
 <div class="hud" id="menu"><div class="mn-w">
 <header class="mn-cab"><button id="m-atras" data-t>‹ Portada</button><div><h1>War Tides</h1><span class="f2" data-t>Elige tu misión</span></div></header>
 <div class="mn-cols">
@@ -215,5 +334,5 @@ body.en-portada #aire{visibility:hidden}
 <footer class="mn-pie"><button id="m-savo">Empezar la misión</button><button id="m-prueba">Batalla de prueba</button><button id="m-cine">Modo cine</button></footer>
 </div></div>
 <div class="hud" id="aviso">Cargando…</div>
-<div id="gira" role="alert"><b aria-hidden="true">⟳</b><span data-t>Gira el móvil: se juega en horizontal.</span></div>
+<div id="gira" role="status"><b aria-hidden="true">⟳</b><span data-t>Gira el móvil: se juega mejor en horizontal</span></div>
 </body></html>
