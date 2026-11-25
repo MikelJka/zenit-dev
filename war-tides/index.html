@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="/zenit-dev/war-tides/assets/main-DwJbgvg3.js"></script>
-  <link rel="modulepreload" crossorigin href="/zenit-dev/war-tides/assets/barco-lpzV63KH.js">
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="./assets/main-CNj2mP3r.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/barco-K_hE90Lh.js">
 </head>
 <body><title>War Tides Banco de Pruebas</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -268,6 +268,16 @@ body.cine #reloj,body.en-portada #reloj{display:none}
  #reloj b{font-size:18px}#reloj span{display:none}
  #obj{top:calc(140px + env(safe-area-inset-top,0px))}
 }
+
+/* Fuerzas de la misión: siluetas 3D de cada clase, por bando (2026-11-25) */
+.mn-mf{display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap}.mn-mapa{flex:0 1 340px;min-width:220px}.mn-mapa #m-mapa{margin-top:0}
+#m-fz{flex:1 1 280px;min-width:250px;display:flex;flex-direction:column;gap:10px;max-height:300px;overflow:auto;scrollbar-width:thin}
+#m-fz .fz-b{background:rgba(255,255,255,.03);border:1px solid var(--borde,rgba(140,180,220,.18));border-radius:12px;padding:8px 10px}
+#m-fz .fz-b>.et{display:flex;justify-content:space-between;margin:0 0 6px;color:var(--acento,#4fb0ff)}#m-fz .fz-b.en>.et{color:#ff8a7a}
+#m-fz .fz-c{display:grid;grid-template-columns:150px 1fr;gap:0 10px;align-items:center;padding:3px 0;border-top:1px solid rgba(255,255,255,.05)}#m-fz .fz-c:first-of-type{border-top:0}
+#m-fz .fz-c img{width:150px;height:26px;object-fit:contain;object-position:center bottom;grid-row:span 2}
+#m-fz .fz-c b{font-size:.82em;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#m-fz .fz-c small{font-size:.72em;opacity:.65;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (max-height:520px) and (min-width:761px){#m-fz{max-height:200px}#m-fz .fz-c{grid-template-columns:100px 1fr}#m-fz .fz-c img{width:100px;height:17px}}
 </style>
 <canvas id="mapa"></canvas><canvas id="sonar" hidden></canvas><div id="etq"></div>
 <div class="hud" id="med"><b id="fps">–</b><span class="et">fps</span> <span id="p1">–</span> · <span id="tm">0:00</span> · <span id="nb">–</span> barcos · <span id="es">–</span><br><span class="et">Por minuto</span> <span id="cm">–</span></div>
@@ -325,7 +335,7 @@ body.cine #reloj,body.en-portada #reloj{display:none}
 <section class="mn-izq"><div class="et" data-t>Campañas y misiones</div><div id="gmi"></div><div id="m-l" class="et" style="min-height:1em;margin-top:5px"></div></section>
 <section class="mn-der">
 <div class="mn-tit"><img id="m-b" width="42" height="28" alt=""><div><h2 id="m-t"></h2><p class="f2" id="m-f"></p><p id="m-cap" class="et"></p></div></div>
-<canvas id="m-mapa" width="300" height="150"></canvas><p class="et" id="m-mapa-e"></p>
+<div class="mn-mf"><div class="mn-mapa"><canvas id="m-mapa" width="300" height="150"></canvas><p class="et" id="m-mapa-e"></p></div><div id="m-fz" aria-label="Fuerzas"></div></div>
 <p id="m-nar" class="mn-nar" hidden></p><p id="m-c"></p><p class="mn-obj"><b id="m-o"></b></p>
 <div class="mn-opc"><div id="gd"><span class="et">Dificultad</span><button data-d="facil">Fácil</button><button data-d="normal">Normal</button><button data-d="dificil">Difícil</button><span id="gid"><button data-id="es">ES</button><button data-id="en">EN</button></span></div><div id="gfi"><span class="et">Formación</span><button data-fi="">Histórica</button><button data-fi="columna">Columna</button><button data-fi="linea">Línea</button><button data-fi="pantalla">Pantalla</button><button data-fi="circulo">Círculo</button></div><div id="gbq"><span class="et">Salen</span></div></div>
 <details id="hs" hidden><summary class="et">Hoja de servicios</summary><div id="hs-l"></div></details><details id="ast" hidden><summary class="et">Astillero</summary><div id="ast-l"></div></details>
