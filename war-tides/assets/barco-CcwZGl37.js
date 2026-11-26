@@ -4576,9 +4576,12 @@ void main() {
           vec4 refl = uReflOn > .5 ? texture2D(uRefl, clamp(ruv, .001, .999)) : vec4(0.);
           refl.a *= smoothstep(0., .03, ruv.x)*smoothstep(1., .97, ruv.x)*smoothstep(0., .03, ruv.y)*smoothstep(1., .97, ruv.y);
           vec3 reflejo = mix(cielo, refl.rgb, refl.a*(1.-fd*.5));
-          vec3 hondo = vec3(.004, .018, .028), medio = vec3(.012, .06, .07);
+          // agua vista desde arriba (cámara cenital: casi sin reflejo de Fresnel): azul de mar abierto, no negro.
+          // La luz que vuelve de dentro del agua (difusa del cielo) se suma al cuerpo; de noche baja con la luna.
+          vec3 hondo = vec3(.009, .04, .072), medio = vec3(.022, .1, .125);
           float sss = pow(max(dot(V, -uSol + N*.6), 0.), 4.)*smoothstep(-1., 2., vW.y)*(.6 + .4*uEstado);
-          vec3 cuerpo = mix(hondo, medio, clamp(.25 + vW.y*.12, 0., 1.)) * (uSolC*.35 + vec3(.06)) + medio*sss*uSolC*.8;
+          vec3 cuerpo = mix(hondo, medio, clamp(.3 + vW.y*.12, 0., 1.)) * (uSolC*.45 + vec3(.1)) + medio*sss*uSolC*.8
+                      + cielo*vec3(.035, .06, .07)*(.6 + .4*max(N.y, 0.));
           vec3 H = normalize(V + uSol);
           float nh = max(dot(N, H), 0.);
           float r2 = mix(.012, .04, fd);
