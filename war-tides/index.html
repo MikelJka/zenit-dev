@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="./assets/main-4NYXqWIz.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/barco-CcwZGl37.js">
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">  <script type="module" crossorigin src="./assets/main-GaAOBOkt.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/barco-Bkb6gqOJ.js">
 </head>
 <body><title>War Tides Banco de Pruebas</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -78,7 +78,7 @@ button:focus-visible{outline:2px solid var(--texto);outline-offset:1px}
 #portada h1{font:700 34px/1.1 var(--mono);letter-spacing:.04em;text-shadow:0 2px 8px #000}
 #portada p{text-shadow:0 1px 4px #000}
 #portada .acc button{min-height:46px;padding-inline:18px;font-size:14px}
-body.en-portada .hud:not(#portada):not(#aviso):not(#logros),body.en-portada #mn,body.en-portada #b-pausa,body.en-portada #b-vel,body.en-portada #b-salta,body.en-portada #b-centra{visibility:hidden}
+body.en-portada .hud:not(#portada):not(#aviso):not(#logros),body.en-portada #mn,body.en-portada #b-pausa,body.en-portada #b-vel,body.en-portada #b-salta,body.en-portada #b-centra,body.en-portada #b-cam{visibility:hidden}
 #menu{inset:0;z-index:5;background:rgba(5,14,19,.96);display:flex;align-items:flex-start;justify-content:center;padding-inline:max(16px,env(safe-area-inset-left,0px));overflow:auto;border:0;touch-action:pan-y}
 #menu>div{max-width:680px;padding-block:12px}
 #menu h1{font:700 26px/1.1 var(--mono);letter-spacing:.02em;margin-bottom:2px}
@@ -163,12 +163,12 @@ button:disabled{opacity:.45}
 button[aria-pressed=true]{background:linear-gradient(180deg,rgba(79,176,255,.42),rgba(42,114,216,.26));color:#eef8ff;border-color:var(--acento);box-shadow:0 0 0 1px rgba(79,176,255,.3),0 0 14px rgba(79,176,255,.3)}
 .et{letter-spacing:.12em}
 /* Botonera de arriba a la derecha, en fila */
-#mn,#b-centra,#b-pausa,#b-vel,#b-salta{top:calc(8px + env(safe-area-inset-top,0px));width:44px;height:44px;border-radius:10px;font-size:18px;display:flex;align-items:center;justify-content:center;padding:0}
+#b-cam,#mn,#b-centra,#b-pausa,#b-vel,#b-salta{top:calc(8px + env(safe-area-inset-top,0px));width:44px;height:44px;border-radius:10px;font-size:18px;display:flex;align-items:center;justify-content:center;padding:0}
 #mn{right:max(8px,env(safe-area-inset-right,0px))}
 #b-salta{right:calc(max(8px,env(safe-area-inset-right,0px)) + 58px)}
 #b-vel{right:calc(max(8px,env(safe-area-inset-right,0px)) + 106px);font:700 14px var(--mono)}
 #b-pausa{right:calc(max(8px,env(safe-area-inset-right,0px)) + 154px)}
-#b-centra{right:calc(max(8px,env(safe-area-inset-right,0px)) + 202px)}
+#b-centra{right:calc(max(8px,env(safe-area-inset-right,0px)) + 202px)}#b-cam{right:calc(max(8px,env(safe-area-inset-right,0px)) + 250px)}
 #b-vel,#b-pausa[aria-pressed="true"]{background:linear-gradient(180deg,rgba(79,176,255,.42),rgba(42,114,216,.26));border-color:var(--acento);color:#eef8ff}
 #ctl{top:calc(62px + env(safe-area-inset-top,0px));width:210px;border-radius:12px;padding:10px;gap:7px}
 #pausa-et{right:auto;left:50%;transform:translateX(-50%);top:calc(70px + env(safe-area-inset-top,0px));border-radius:999px;padding:4px 14px;background:rgba(30,20,6,.8)}
@@ -252,8 +252,8 @@ body.cine #reloj,body.en-portada #reloj{display:none}
 @media (max-height:480px){
  #flota button{width:124px;padding:4px 7px 5px}#flota button img{height:18px;margin:2px 0 1px}#flota button .n{font-size:11px}
  #reloj b{font-size:19px}#reloj{padding:2px 14px 3px}
- #mn,#b-centra,#b-pausa,#b-vel,#b-salta{width:38px;height:38px;font-size:15px}
- #b-salta{right:calc(max(8px,env(safe-area-inset-right,0px)) + 50px)}#b-vel{right:calc(max(8px,env(safe-area-inset-right,0px)) + 92px)}#b-pausa{right:calc(max(8px,env(safe-area-inset-right,0px)) + 134px)}#b-centra{right:calc(max(8px,env(safe-area-inset-right,0px)) + 176px)}
+ #b-cam,#mn,#b-centra,#b-pausa,#b-vel,#b-salta{width:38px;height:38px;font-size:15px}
+ #b-salta{right:calc(max(8px,env(safe-area-inset-right,0px)) + 50px)}#b-vel{right:calc(max(8px,env(safe-area-inset-right,0px)) + 92px)}#b-pausa{right:calc(max(8px,env(safe-area-inset-right,0px)) + 134px)}#b-centra{right:calc(max(8px,env(safe-area-inset-right,0px)) + 176px)}#b-cam{right:calc(max(8px,env(safe-area-inset-right,0px)) + 218px)}
  #ctl{top:calc(52px + env(safe-area-inset-top,0px))}
  #ficha{width:min(460px,calc(100vw - 240px));min-width:340px;padding:6px 9px 7px}
  #ficha strong{font-size:14px}#ficha #fc,#ficha #fo{font-size:10.5px}#fa{display:none}
@@ -278,9 +278,14 @@ body.cine #reloj,body.en-portada #reloj{display:none}
 #m-fz .fz-c img{width:150px;height:26px;object-fit:contain;object-position:center bottom;grid-row:span 2}
 #m-fz .fz-c b{font-size:.82em;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#m-fz .fz-c small{font-size:.72em;opacity:.65;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 @media (max-height:520px) and (min-width:761px){#m-fz{max-height:200px}#m-fz .fz-c{grid-template-columns:100px 1fr}#m-fz .fz-c img{width:100px;height:17px}}
+
+/* Aviso breve (modo de cámara) */
+#toast{position:fixed;left:50%;top:64px;transform:translateX(-50%);z-index:60;padding:6px 14px;border-radius:999px;background:rgba(10,20,32,.82);border:1px solid rgba(120,180,240,.3);color:#e6f0fa;font-size:13px;opacity:0;transition:opacity .25s;pointer-events:none}
+#toast.ve{opacity:1}
 </style>
 <canvas id="mapa"></canvas><canvas id="sonar" hidden></canvas><div id="etq"></div>
 <div class="hud" id="med"><b id="fps">–</b><span class="et">fps</span> <span id="p1">–</span> · <span id="tm">0:00</span> · <span id="nb">–</span> barcos · <span id="es">–</span><br><span class="et">Por minuto</span> <span id="cm">–</span></div>
+<button class="hud" id="b-cam" aria-label="Cámara inclinada" title="Cámara inclinada (C; girar: Q/E o dos dedos)">◢</button>
 <button class="hud" id="b-centra" aria-label="Centrar la vista en tu flota" title="Centrar en la flota">⌖</button>
 <button class="hud" id="b-pausa" aria-label="Pausar la batalla" title="Pausa (barra espaciadora)">⏸</button>
 <button class="hud" id="b-vel" aria-label="Velocidad del tiempo" title="Velocidad">×1</button>
