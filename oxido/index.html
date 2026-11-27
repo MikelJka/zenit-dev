@@ -9,10 +9,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" />
-    <script type="module" crossorigin src="/zenit-dev/oxido/assets/index-CHSXy7Uo.js"></script>
-    <link rel="stylesheet" crossorigin href="/zenit-dev/oxido/assets/index-Dvu7lXxk.css">
+    <style>
+      /* Pantalla de carga: aquí y no en style.css para que se vea desde el primer instante. */
+      html, body { background: #141210; }
+      #boot { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: flex-end; justify-content: center; background: #141210 url('portada-horizontal.webp') center / cover no-repeat; transition: opacity 0.6s ease; font-family: system-ui, sans-serif; color: #efe4d2; }
+      #boot::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10, 8, 6, 0.15) 0%, rgba(10, 8, 6, 0.25) 45%, rgba(10, 8, 6, 0.92) 100%); }
+      #boot.boot-out { opacity: 0; pointer-events: none; }
+      .boot-box { position: relative; width: min(520px, 88vw); margin-bottom: max(8vh, 40px); display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+      .boot-box img { width: 84px; height: 84px; filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.7)); }
+      .boot-title { font-size: clamp(34px, 7vw, 60px); font-weight: 800; letter-spacing: 0.32em; padding-left: 0.32em; background: linear-gradient(180deg, #ffd08a, #e0782c 60%, #9a3c14); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 3px 0 #2a1408) drop-shadow(0 0 24px rgba(224, 120, 44, 0.35)); }
+      .boot-sub { font-size: 12px; letter-spacing: 0.5em; padding-left: 0.5em; color: #d8c2a2; text-transform: uppercase; margin-top: -4px; }
+      .boot-bar { width: 100%; height: 6px; margin-top: 18px; border-radius: 3px; background: rgba(255, 255, 255, 0.12); overflow: hidden; box-shadow: 0 0 0 1px rgba(224, 120, 44, 0.35); }
+      .boot-bar i { display: block; height: 100%; width: 4%; border-radius: 3px; background: linear-gradient(90deg, #9a3c14, #e0782c, #ffd08a); box-shadow: 0 0 12px rgba(255, 170, 90, 0.8); transition: width 0.35s ease; }
+      .boot-msg { font-size: 13px; color: #cdb898; min-height: 1.2em; }
+      @media (orientation: portrait) { #boot { background-image: url('portada-vertical.webp'); } }
+    </style>
+    <script type="module" crossorigin src="/zenit-dev/oxido/assets/index-C1M1yvf8.js"></script>
+    <link rel="stylesheet" crossorigin href="/zenit-dev/oxido/assets/index-CYSuU6tz.css">
   </head>
   <body>
+    <div id="boot" role="status" aria-live="polite">
+      <div class="boot-box">
+        <img src="rustfall-emblema.png" alt="" width="84" height="84" />
+        <div class="boot-title">RUSTFALL</div>
+        <div class="boot-sub">Colony Survival</div>
+        <div class="boot-bar"><i id="boot-fill"></i></div>
+        <div id="boot-msg" class="boot-msg">Cargando…</div>
+      </div>
+    </div>
     <div id="game"></div>
 
     <header id="topbar" class="panel">
@@ -302,7 +326,8 @@
         <header class="mm-head">
           <img class="mm-logo" src="rustfall-emblema.png" alt="" width="96" height="96" />
           <div class="mm-title">RUSTFALL</div>
-          <div class="mm-sub">Supervivencia en el páramo</div>
+          <div class="mm-sub">Colony Survival</div>
+          <div class="mm-tagline">Supervivencia en el páramo</div>
         </header>
         <div id="mm-home" class="mm-body">
           <button id="mm-continue" class="mm-primary" type="button">
