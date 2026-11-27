@@ -1,0 +1,1977 @@
+{
+ "hd": {
+  "personas": {
+   "frame": 128,
+   "poses": [
+    "idle0",
+    "idle1",
+    "walk0",
+    "walk1",
+    "walk2",
+    "walk3",
+    "work0",
+    "work1",
+    "hit0",
+    "hit1",
+    "down"
+   ],
+   "classes": {
+    "aim": {
+     "arma_arco": {
+      "file": "persona-aim-arma_arco.png"
+     },
+     "arma_ballesta": {
+      "file": "persona-aim-arma_ballesta.png"
+     },
+     "arma_ballesta_pesada": {
+      "file": "persona-aim-arma_ballesta_pesada.png"
+     },
+     "arma_escopeta": {
+      "file": "persona-aim-arma_escopeta.png"
+     },
+     "arma_francotirador": {
+      "file": "persona-aim-arma_francotirador.png"
+     },
+     "arma_lanzallamas": {
+      "file": "persona-aim-arma_lanzallamas.png"
+     },
+     "arma_pistola": {
+      "file": "persona-aim-arma_pistola.png"
+     },
+     "arma_rifle": {
+      "file": "persona-aim-arma_rifle.png"
+     },
+     "arma_subfusil": {
+      "file": "persona-aim-arma_subfusil.png"
+     },
+     "beard": {
+      "file": "persona-aim-beard.png",
+      "mask": "persona-aim-beard-mask.png"
+     },
+     "body": {
+      "file": "persona-aim-body.png",
+      "mask": "persona-aim-body-mask.png"
+     },
+     "casco_chapa": {
+      "file": "persona-aim-casco_chapa.png"
+     },
+     "casco_metal": {
+      "file": "persona-aim-casco_metal.png"
+     },
+     "casco_tactico": {
+      "file": "persona-aim-casco_tactico.png"
+     },
+     "chaleco_chapa": {
+      "file": "persona-aim-chaleco_chapa.png"
+     },
+     "chaleco_cuero": {
+      "file": "persona-aim-chaleco_cuero.png"
+     },
+     "chaleco_metal": {
+      "file": "persona-aim-chaleco_metal.png"
+     },
+     "chaleco_tactico": {
+      "file": "persona-aim-chaleco_tactico.png"
+     },
+     "hair0": {
+      "file": "persona-aim-hair0.png",
+      "mask": "persona-aim-hair0-mask.png"
+     },
+     "hair1": {
+      "file": "persona-aim-hair1.png",
+      "mask": "persona-aim-hair1-mask.png"
+     },
+     "hair2": {
+      "file": "persona-aim-hair2.png",
+      "mask": "persona-aim-hair2-mask.png"
+     },
+     "hair3": {
+      "file": "persona-aim-hair3.png",
+      "mask": "persona-aim-hair3-mask.png"
+     },
+     "hair4": {
+      "file": "persona-aim-hair4.png",
+      "mask": "persona-aim-hair4-mask.png"
+     },
+     "hair5": {
+      "file": "persona-aim-hair5.png",
+      "mask": "persona-aim-hair5-mask.png"
+     },
+     "rol_aliado": {
+      "file": "persona-aim-rol_aliado.png"
+     },
+     "rol_comerciante": {
+      "file": "persona-aim-rol_comerciante.png"
+     },
+     "rol_prisionero": {
+      "file": "persona-aim-rol_prisionero.png"
+     },
+     "rol_saqueador": {
+      "file": "persona-aim-rol_saqueador.png"
+     }
+    },
+    "melee": {
+     "arma_cuchillo": {
+      "file": "persona-melee-arma_cuchillo.png"
+     },
+     "arma_hacha_acero": {
+      "file": "persona-melee-arma_hacha_acero.png"
+     },
+     "arma_lanza": {
+      "file": "persona-melee-arma_lanza.png"
+     },
+     "arma_lanza_metal": {
+      "file": "persona-melee-arma_lanza_metal.png"
+     },
+     "arma_machete": {
+      "file": "persona-melee-arma_machete.png"
+     },
+     "arma_palo": {
+      "file": "persona-melee-arma_palo.png"
+     },
+     "arma_tuberia": {
+      "file": "persona-melee-arma_tuberia.png"
+     },
+     "beard": {
+      "file": "persona-melee-beard.png",
+      "mask": "persona-melee-beard-mask.png"
+     },
+     "body": {
+      "file": "persona-melee-body.png",
+      "mask": "persona-melee-body-mask.png"
+     },
+     "casco_chapa": {
+      "file": "persona-melee-casco_chapa.png"
+     },
+     "casco_metal": {
+      "file": "persona-melee-casco_metal.png"
+     },
+     "casco_tactico": {
+      "file": "persona-melee-casco_tactico.png"
+     },
+     "chaleco_chapa": {
+      "file": "persona-melee-chaleco_chapa.png"
+     },
+     "chaleco_cuero": {
+      "file": "persona-melee-chaleco_cuero.png"
+     },
+     "chaleco_metal": {
+      "file": "persona-melee-chaleco_metal.png"
+     },
+     "chaleco_tactico": {
+      "file": "persona-melee-chaleco_tactico.png"
+     },
+     "hair0": {
+      "file": "persona-melee-hair0.png",
+      "mask": "persona-melee-hair0-mask.png"
+     },
+     "hair1": {
+      "file": "persona-melee-hair1.png",
+      "mask": "persona-melee-hair1-mask.png"
+     },
+     "hair2": {
+      "file": "persona-melee-hair2.png",
+      "mask": "persona-melee-hair2-mask.png"
+     },
+     "hair3": {
+      "file": "persona-melee-hair3.png",
+      "mask": "persona-melee-hair3-mask.png"
+     },
+     "hair4": {
+      "file": "persona-melee-hair4.png",
+      "mask": "persona-melee-hair4-mask.png"
+     },
+     "hair5": {
+      "file": "persona-melee-hair5.png",
+      "mask": "persona-melee-hair5-mask.png"
+     },
+     "rol_aliado": {
+      "file": "persona-melee-rol_aliado.png"
+     },
+     "rol_comerciante": {
+      "file": "persona-melee-rol_comerciante.png"
+     },
+     "rol_prisionero": {
+      "file": "persona-melee-rol_prisionero.png"
+     },
+     "rol_saqueador": {
+      "file": "persona-melee-rol_saqueador.png"
+     }
+    }
+   }
+  },
+  "muros": {
+   "empalizada_alta": {
+    "file": "empalizada_alta.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 120
+     },
+     {
+      "y": 120,
+      "w": 64,
+      "h": 144
+     },
+     {
+      "y": 264,
+      "w": 64,
+      "h": 160
+     },
+     {
+      "y": 424,
+      "w": 64,
+      "h": 176
+     }
+    ]
+   },
+   "muralla_piedra": {
+    "file": "muralla_piedra.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 120
+     },
+     {
+      "y": 120,
+      "w": 64,
+      "h": 144
+     },
+     {
+      "y": 264,
+      "w": 64,
+      "h": 160
+     },
+     {
+      "y": 424,
+      "w": 64,
+      "h": 176
+     }
+    ]
+   },
+   "muro_alto_chatarra": {
+    "file": "muro_alto_chatarra.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 120
+     },
+     {
+      "y": 120,
+      "w": 64,
+      "h": 144
+     },
+     {
+      "y": 264,
+      "w": 64,
+      "h": 160
+     },
+     {
+      "y": 424,
+      "w": 64,
+      "h": 176
+     }
+    ]
+   },
+   "muro_alto_hormigon": {
+    "file": "muro_alto_hormigon.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 120
+     },
+     {
+      "y": 120,
+      "w": 64,
+      "h": 144
+     },
+     {
+      "y": 264,
+      "w": 64,
+      "h": 160
+     },
+     {
+      "y": 424,
+      "w": 64,
+      "h": 176
+     }
+    ]
+   },
+   "muro_alto_metal": {
+    "file": "muro_alto_metal.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 120
+     },
+     {
+      "y": 120,
+      "w": 64,
+      "h": 144
+     },
+     {
+      "y": 264,
+      "w": 64,
+      "h": 160
+     },
+     {
+      "y": 424,
+      "w": 64,
+      "h": 176
+     }
+    ]
+   },
+   "muro_aspilleras_metal": {
+    "file": "muro_aspilleras_metal.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 92
+     },
+     {
+      "y": 92,
+      "w": 64,
+      "h": 100
+     },
+     {
+      "y": 192,
+      "w": 64,
+      "h": 104
+     },
+     {
+      "y": 296,
+      "w": 64,
+      "h": 108
+     }
+    ]
+   },
+   "muro_aspilleras_piedra": {
+    "file": "muro_aspilleras_piedra.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 92
+     },
+     {
+      "y": 92,
+      "w": 64,
+      "h": 100
+     },
+     {
+      "y": 192,
+      "w": 64,
+      "h": 104
+     },
+     {
+      "y": 296,
+      "w": 64,
+      "h": 108
+     }
+    ]
+   },
+   "muro_chatarra": {
+    "file": "muro_chatarra.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 92
+     },
+     {
+      "y": 92,
+      "w": 64,
+      "h": 100
+     },
+     {
+      "y": 192,
+      "w": 64,
+      "h": 104
+     },
+     {
+      "y": 296,
+      "w": 64,
+      "h": 108
+     }
+    ]
+   },
+   "muro_hormigon": {
+    "file": "muro_hormigon.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 92
+     },
+     {
+      "y": 92,
+      "w": 64,
+      "h": 100
+     },
+     {
+      "y": 192,
+      "w": 64,
+      "h": 104
+     },
+     {
+      "y": 296,
+      "w": 64,
+      "h": 108
+     }
+    ]
+   },
+   "muro_madera": {
+    "file": "muro_madera.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 92
+     },
+     {
+      "y": 92,
+      "w": 64,
+      "h": 100
+     },
+     {
+      "y": 192,
+      "w": 64,
+      "h": 104
+     },
+     {
+      "y": 296,
+      "w": 64,
+      "h": 108
+     }
+    ]
+   },
+   "muro_metal": {
+    "file": "muro_metal.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 92
+     },
+     {
+      "y": 92,
+      "w": 64,
+      "h": 100
+     },
+     {
+      "y": 192,
+      "w": 64,
+      "h": 104
+     },
+     {
+      "y": 296,
+      "w": 64,
+      "h": 108
+     }
+    ]
+   },
+   "muro_piedra": {
+    "file": "muro_piedra.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 92
+     },
+     {
+      "y": 92,
+      "w": 64,
+      "h": 100
+     },
+     {
+      "y": 192,
+      "w": 64,
+      "h": 104
+     },
+     {
+      "y": 296,
+      "w": 64,
+      "h": 108
+     }
+    ]
+   }
+  },
+  "puertas": {
+   "porton_chapa": {
+    "file": "porton_chapa.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 120
+     },
+     {
+      "y": 120,
+      "w": 64,
+      "h": 144
+     },
+     {
+      "y": 264,
+      "w": 64,
+      "h": 160
+     },
+     {
+      "y": 424,
+      "w": 64,
+      "h": 176
+     }
+    ]
+   },
+   "porton_madera": {
+    "file": "porton_madera.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 120
+     },
+     {
+      "y": 120,
+      "w": 64,
+      "h": 144
+     },
+     {
+      "y": 264,
+      "w": 64,
+      "h": 160
+     },
+     {
+      "y": 424,
+      "w": 64,
+      "h": 176
+     }
+    ]
+   },
+   "porton_metal": {
+    "file": "porton_metal.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 120
+     },
+     {
+      "y": 120,
+      "w": 64,
+      "h": 144
+     },
+     {
+      "y": 264,
+      "w": 64,
+      "h": 160
+     },
+     {
+      "y": 424,
+      "w": 64,
+      "h": 176
+     }
+    ]
+   },
+   "puerta_acorazada": {
+    "file": "puerta_acorazada.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 92
+     },
+     {
+      "y": 92,
+      "w": 64,
+      "h": 100
+     },
+     {
+      "y": 192,
+      "w": 64,
+      "h": 104
+     },
+     {
+      "y": 296,
+      "w": 64,
+      "h": 108
+     }
+    ]
+   },
+   "puerta_auto": {
+    "file": "puerta_auto.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 92
+     },
+     {
+      "y": 92,
+      "w": 64,
+      "h": 100
+     },
+     {
+      "y": 192,
+      "w": 64,
+      "h": 104
+     },
+     {
+      "y": 296,
+      "w": 64,
+      "h": 108
+     }
+    ]
+   },
+   "puerta_chapa": {
+    "file": "puerta_chapa.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 92
+     },
+     {
+      "y": 92,
+      "w": 64,
+      "h": 100
+     },
+     {
+      "y": 192,
+      "w": 64,
+      "h": 104
+     },
+     {
+      "y": 296,
+      "w": 64,
+      "h": 108
+     }
+    ]
+   },
+   "puerta_madera": {
+    "file": "puerta_madera.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 92
+     },
+     {
+      "y": 92,
+      "w": 64,
+      "h": 100
+     },
+     {
+      "y": 192,
+      "w": 64,
+      "h": 104
+     },
+     {
+      "y": 296,
+      "w": 64,
+      "h": 108
+     }
+    ]
+   },
+   "puerta_metal": {
+    "file": "puerta_metal.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 64,
+      "h": 92
+     },
+     {
+      "y": 92,
+      "w": 64,
+      "h": 100
+     },
+     {
+      "y": 192,
+      "w": 64,
+      "h": 104
+     },
+     {
+      "y": 296,
+      "w": 64,
+      "h": 108
+     }
+    ]
+   }
+  },
+  "muebles": {
+   "cama-t0-h": {
+    "file": "cama-t0-h.png",
+    "w": 128,
+    "h": 64
+   },
+   "cama-t1-h": {
+    "file": "cama-t1-h.png",
+    "w": 128,
+    "h": 56
+   },
+   "cama-t2-h": {
+    "file": "cama-t2-h.png",
+    "w": 128,
+    "h": 48
+   },
+   "cama-t3-h": {
+    "file": "cama-t3-h.png",
+    "w": 128,
+    "h": 40
+   },
+   "cama-t0-v": {
+    "file": "cama-t0-v.png",
+    "w": 64,
+    "h": 128
+   },
+   "cama-t1-v": {
+    "file": "cama-t1-v.png",
+    "w": 64,
+    "h": 112
+   },
+   "cama-t2-v": {
+    "file": "cama-t2-v.png",
+    "w": 64,
+    "h": 96
+   },
+   "cama-t3-v": {
+    "file": "cama-t3-v.png",
+    "w": 64,
+    "h": 80
+   }
+  },
+  "vehiculos": {
+   "buggy_saqueador": {
+    "file": "buggy_saqueador.png",
+    "w": 128,
+    "h": 104,
+    "frames": [
+     "side",
+     "front",
+     "back"
+    ]
+   }
+  },
+  "suelos": {
+   "file": "suelos.png",
+   "size": 64,
+   "frames": [
+    "tierra",
+    "hierba",
+    "agua_somera"
+   ]
+  }
+ },
+ "lite": {
+  "personas": {
+   "frame": 64,
+   "poses": [
+    "idle0",
+    "idle1",
+    "walk0",
+    "walk1",
+    "walk2",
+    "walk3",
+    "work0",
+    "work1",
+    "hit0",
+    "hit1",
+    "down"
+   ],
+   "classes": {
+    "aim": {
+     "arma_arco": {
+      "file": "persona-aim-arma_arco.png"
+     },
+     "arma_ballesta": {
+      "file": "persona-aim-arma_ballesta.png"
+     },
+     "arma_ballesta_pesada": {
+      "file": "persona-aim-arma_ballesta_pesada.png"
+     },
+     "arma_escopeta": {
+      "file": "persona-aim-arma_escopeta.png"
+     },
+     "arma_francotirador": {
+      "file": "persona-aim-arma_francotirador.png"
+     },
+     "arma_lanzallamas": {
+      "file": "persona-aim-arma_lanzallamas.png"
+     },
+     "arma_pistola": {
+      "file": "persona-aim-arma_pistola.png"
+     },
+     "arma_rifle": {
+      "file": "persona-aim-arma_rifle.png"
+     },
+     "arma_subfusil": {
+      "file": "persona-aim-arma_subfusil.png"
+     },
+     "beard": {
+      "file": "persona-aim-beard.png",
+      "mask": "persona-aim-beard-mask.png"
+     },
+     "body": {
+      "file": "persona-aim-body.png",
+      "mask": "persona-aim-body-mask.png"
+     },
+     "casco_chapa": {
+      "file": "persona-aim-casco_chapa.png"
+     },
+     "casco_metal": {
+      "file": "persona-aim-casco_metal.png"
+     },
+     "casco_tactico": {
+      "file": "persona-aim-casco_tactico.png"
+     },
+     "chaleco_chapa": {
+      "file": "persona-aim-chaleco_chapa.png"
+     },
+     "chaleco_cuero": {
+      "file": "persona-aim-chaleco_cuero.png"
+     },
+     "chaleco_metal": {
+      "file": "persona-aim-chaleco_metal.png"
+     },
+     "chaleco_tactico": {
+      "file": "persona-aim-chaleco_tactico.png"
+     },
+     "hair0": {
+      "file": "persona-aim-hair0.png",
+      "mask": "persona-aim-hair0-mask.png"
+     },
+     "hair1": {
+      "file": "persona-aim-hair1.png",
+      "mask": "persona-aim-hair1-mask.png"
+     },
+     "hair2": {
+      "file": "persona-aim-hair2.png",
+      "mask": "persona-aim-hair2-mask.png"
+     },
+     "hair3": {
+      "file": "persona-aim-hair3.png",
+      "mask": "persona-aim-hair3-mask.png"
+     },
+     "hair4": {
+      "file": "persona-aim-hair4.png",
+      "mask": "persona-aim-hair4-mask.png"
+     },
+     "hair5": {
+      "file": "persona-aim-hair5.png",
+      "mask": "persona-aim-hair5-mask.png"
+     },
+     "rol_aliado": {
+      "file": "persona-aim-rol_aliado.png"
+     },
+     "rol_comerciante": {
+      "file": "persona-aim-rol_comerciante.png"
+     },
+     "rol_prisionero": {
+      "file": "persona-aim-rol_prisionero.png"
+     },
+     "rol_saqueador": {
+      "file": "persona-aim-rol_saqueador.png"
+     }
+    },
+    "melee": {
+     "arma_cuchillo": {
+      "file": "persona-melee-arma_cuchillo.png"
+     },
+     "arma_hacha_acero": {
+      "file": "persona-melee-arma_hacha_acero.png"
+     },
+     "arma_lanza": {
+      "file": "persona-melee-arma_lanza.png"
+     },
+     "arma_lanza_metal": {
+      "file": "persona-melee-arma_lanza_metal.png"
+     },
+     "arma_machete": {
+      "file": "persona-melee-arma_machete.png"
+     },
+     "arma_palo": {
+      "file": "persona-melee-arma_palo.png"
+     },
+     "arma_tuberia": {
+      "file": "persona-melee-arma_tuberia.png"
+     },
+     "beard": {
+      "file": "persona-melee-beard.png",
+      "mask": "persona-melee-beard-mask.png"
+     },
+     "body": {
+      "file": "persona-melee-body.png",
+      "mask": "persona-melee-body-mask.png"
+     },
+     "casco_chapa": {
+      "file": "persona-melee-casco_chapa.png"
+     },
+     "casco_metal": {
+      "file": "persona-melee-casco_metal.png"
+     },
+     "casco_tactico": {
+      "file": "persona-melee-casco_tactico.png"
+     },
+     "chaleco_chapa": {
+      "file": "persona-melee-chaleco_chapa.png"
+     },
+     "chaleco_cuero": {
+      "file": "persona-melee-chaleco_cuero.png"
+     },
+     "chaleco_metal": {
+      "file": "persona-melee-chaleco_metal.png"
+     },
+     "chaleco_tactico": {
+      "file": "persona-melee-chaleco_tactico.png"
+     },
+     "hair0": {
+      "file": "persona-melee-hair0.png",
+      "mask": "persona-melee-hair0-mask.png"
+     },
+     "hair1": {
+      "file": "persona-melee-hair1.png",
+      "mask": "persona-melee-hair1-mask.png"
+     },
+     "hair2": {
+      "file": "persona-melee-hair2.png",
+      "mask": "persona-melee-hair2-mask.png"
+     },
+     "hair3": {
+      "file": "persona-melee-hair3.png",
+      "mask": "persona-melee-hair3-mask.png"
+     },
+     "hair4": {
+      "file": "persona-melee-hair4.png",
+      "mask": "persona-melee-hair4-mask.png"
+     },
+     "hair5": {
+      "file": "persona-melee-hair5.png",
+      "mask": "persona-melee-hair5-mask.png"
+     },
+     "rol_aliado": {
+      "file": "persona-melee-rol_aliado.png"
+     },
+     "rol_comerciante": {
+      "file": "persona-melee-rol_comerciante.png"
+     },
+     "rol_prisionero": {
+      "file": "persona-melee-rol_prisionero.png"
+     },
+     "rol_saqueador": {
+      "file": "persona-melee-rol_saqueador.png"
+     }
+    }
+   }
+  },
+  "muros": {
+   "empalizada_alta": {
+    "file": "empalizada_alta.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 60
+     },
+     {
+      "y": 60,
+      "w": 32,
+      "h": 72
+     },
+     {
+      "y": 132,
+      "w": 32,
+      "h": 80
+     },
+     {
+      "y": 212,
+      "w": 32,
+      "h": 88
+     }
+    ]
+   },
+   "muralla_piedra": {
+    "file": "muralla_piedra.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 60
+     },
+     {
+      "y": 60,
+      "w": 32,
+      "h": 72
+     },
+     {
+      "y": 132,
+      "w": 32,
+      "h": 80
+     },
+     {
+      "y": 212,
+      "w": 32,
+      "h": 88
+     }
+    ]
+   },
+   "muro_alto_chatarra": {
+    "file": "muro_alto_chatarra.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 60
+     },
+     {
+      "y": 60,
+      "w": 32,
+      "h": 72
+     },
+     {
+      "y": 132,
+      "w": 32,
+      "h": 80
+     },
+     {
+      "y": 212,
+      "w": 32,
+      "h": 88
+     }
+    ]
+   },
+   "muro_alto_hormigon": {
+    "file": "muro_alto_hormigon.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 60
+     },
+     {
+      "y": 60,
+      "w": 32,
+      "h": 72
+     },
+     {
+      "y": 132,
+      "w": 32,
+      "h": 80
+     },
+     {
+      "y": 212,
+      "w": 32,
+      "h": 88
+     }
+    ]
+   },
+   "muro_alto_metal": {
+    "file": "muro_alto_metal.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 60
+     },
+     {
+      "y": 60,
+      "w": 32,
+      "h": 72
+     },
+     {
+      "y": 132,
+      "w": 32,
+      "h": 80
+     },
+     {
+      "y": 212,
+      "w": 32,
+      "h": 88
+     }
+    ]
+   },
+   "muro_aspilleras_metal": {
+    "file": "muro_aspilleras_metal.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 46
+     },
+     {
+      "y": 46,
+      "w": 32,
+      "h": 50
+     },
+     {
+      "y": 96,
+      "w": 32,
+      "h": 52
+     },
+     {
+      "y": 148,
+      "w": 32,
+      "h": 54
+     }
+    ]
+   },
+   "muro_aspilleras_piedra": {
+    "file": "muro_aspilleras_piedra.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 46
+     },
+     {
+      "y": 46,
+      "w": 32,
+      "h": 50
+     },
+     {
+      "y": 96,
+      "w": 32,
+      "h": 52
+     },
+     {
+      "y": 148,
+      "w": 32,
+      "h": 54
+     }
+    ]
+   },
+   "muro_chatarra": {
+    "file": "muro_chatarra.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 46
+     },
+     {
+      "y": 46,
+      "w": 32,
+      "h": 50
+     },
+     {
+      "y": 96,
+      "w": 32,
+      "h": 52
+     },
+     {
+      "y": 148,
+      "w": 32,
+      "h": 54
+     }
+    ]
+   },
+   "muro_hormigon": {
+    "file": "muro_hormigon.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 46
+     },
+     {
+      "y": 46,
+      "w": 32,
+      "h": 50
+     },
+     {
+      "y": 96,
+      "w": 32,
+      "h": 52
+     },
+     {
+      "y": 148,
+      "w": 32,
+      "h": 54
+     }
+    ]
+   },
+   "muro_madera": {
+    "file": "muro_madera.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 46
+     },
+     {
+      "y": 46,
+      "w": 32,
+      "h": 50
+     },
+     {
+      "y": 96,
+      "w": 32,
+      "h": 52
+     },
+     {
+      "y": 148,
+      "w": 32,
+      "h": 54
+     }
+    ]
+   },
+   "muro_metal": {
+    "file": "muro_metal.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 46
+     },
+     {
+      "y": 46,
+      "w": 32,
+      "h": 50
+     },
+     {
+      "y": 96,
+      "w": 32,
+      "h": 52
+     },
+     {
+      "y": 148,
+      "w": 32,
+      "h": 54
+     }
+    ]
+   },
+   "muro_piedra": {
+    "file": "muro_piedra.png",
+    "frames": [
+     "v0-n",
+     "v0-w",
+     "v0-e",
+     "v0-c",
+     "v0-s",
+     "v0-poste",
+     "v1-n",
+     "v1-w",
+     "v1-e",
+     "v1-c",
+     "v1-s",
+     "v1-poste"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 46
+     },
+     {
+      "y": 46,
+      "w": 32,
+      "h": 50
+     },
+     {
+      "y": 96,
+      "w": 32,
+      "h": 52
+     },
+     {
+      "y": 148,
+      "w": 32,
+      "h": 54
+     }
+    ]
+   }
+  },
+  "puertas": {
+   "porton_chapa": {
+    "file": "porton_chapa.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 60
+     },
+     {
+      "y": 60,
+      "w": 32,
+      "h": 72
+     },
+     {
+      "y": 132,
+      "w": 32,
+      "h": 80
+     },
+     {
+      "y": 212,
+      "w": 32,
+      "h": 88
+     }
+    ]
+   },
+   "porton_madera": {
+    "file": "porton_madera.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 60
+     },
+     {
+      "y": 60,
+      "w": 32,
+      "h": 72
+     },
+     {
+      "y": 132,
+      "w": 32,
+      "h": 80
+     },
+     {
+      "y": 212,
+      "w": 32,
+      "h": 88
+     }
+    ]
+   },
+   "porton_metal": {
+    "file": "porton_metal.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 60
+     },
+     {
+      "y": 60,
+      "w": 32,
+      "h": 72
+     },
+     {
+      "y": 132,
+      "w": 32,
+      "h": 80
+     },
+     {
+      "y": 212,
+      "w": 32,
+      "h": 88
+     }
+    ]
+   },
+   "puerta_acorazada": {
+    "file": "puerta_acorazada.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 46
+     },
+     {
+      "y": 46,
+      "w": 32,
+      "h": 50
+     },
+     {
+      "y": 96,
+      "w": 32,
+      "h": 52
+     },
+     {
+      "y": 148,
+      "w": 32,
+      "h": 54
+     }
+    ]
+   },
+   "puerta_auto": {
+    "file": "puerta_auto.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 46
+     },
+     {
+      "y": 46,
+      "w": 32,
+      "h": 50
+     },
+     {
+      "y": 96,
+      "w": 32,
+      "h": 52
+     },
+     {
+      "y": 148,
+      "w": 32,
+      "h": 54
+     }
+    ]
+   },
+   "puerta_chapa": {
+    "file": "puerta_chapa.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 46
+     },
+     {
+      "y": 46,
+      "w": 32,
+      "h": 50
+     },
+     {
+      "y": 96,
+      "w": 32,
+      "h": 52
+     },
+     {
+      "y": 148,
+      "w": 32,
+      "h": 54
+     }
+    ]
+   },
+   "puerta_madera": {
+    "file": "puerta_madera.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 46
+     },
+     {
+      "y": 46,
+      "w": 32,
+      "h": 50
+     },
+     {
+      "y": 96,
+      "w": 32,
+      "h": 52
+     },
+     {
+      "y": 148,
+      "w": 32,
+      "h": 54
+     }
+    ]
+   },
+   "puerta_metal": {
+    "file": "puerta_metal.png",
+    "frames": [
+     "hc",
+     "ha",
+     "vc",
+     "va"
+    ],
+    "tilts": [
+     {
+      "y": 0,
+      "w": 32,
+      "h": 46
+     },
+     {
+      "y": 46,
+      "w": 32,
+      "h": 50
+     },
+     {
+      "y": 96,
+      "w": 32,
+      "h": 52
+     },
+     {
+      "y": 148,
+      "w": 32,
+      "h": 54
+     }
+    ]
+   }
+  },
+  "muebles": {
+   "cama-t0-h": {
+    "file": "cama-t0-h.png",
+    "w": 64,
+    "h": 32
+   },
+   "cama-t1-h": {
+    "file": "cama-t1-h.png",
+    "w": 64,
+    "h": 28
+   },
+   "cama-t2-h": {
+    "file": "cama-t2-h.png",
+    "w": 64,
+    "h": 24
+   },
+   "cama-t3-h": {
+    "file": "cama-t3-h.png",
+    "w": 64,
+    "h": 20
+   },
+   "cama-t0-v": {
+    "file": "cama-t0-v.png",
+    "w": 32,
+    "h": 64
+   },
+   "cama-t1-v": {
+    "file": "cama-t1-v.png",
+    "w": 32,
+    "h": 56
+   },
+   "cama-t2-v": {
+    "file": "cama-t2-v.png",
+    "w": 32,
+    "h": 48
+   },
+   "cama-t3-v": {
+    "file": "cama-t3-v.png",
+    "w": 32,
+    "h": 40
+   }
+  },
+  "vehiculos": {
+   "buggy_saqueador": {
+    "file": "buggy_saqueador.png",
+    "w": 64,
+    "h": 52,
+    "frames": [
+     "side",
+     "front",
+     "back"
+    ]
+   }
+  },
+  "suelos": {
+   "file": "suelos.png",
+   "size": 64,
+   "frames": [
+    "tierra",
+    "hierba",
+    "agua_somera"
+   ]
+  }
+ },
+ "version": 2,
+ "escala": {
+  "hd": 4,
+  "lite": 2
+ }
+}
